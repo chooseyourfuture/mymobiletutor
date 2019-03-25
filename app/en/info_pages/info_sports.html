@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="sportsContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/sports 3.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Sports</h5>
+							<p>There are many sport grounds and halls for different sports around Turku. Some of these are reserved for sports teams for a large part of the day, but there are public hours available for majority of them. In addition, CampusSport provides various sports for the students and staff. </p>
+							
+							<p> You can book sport grounds organized by the city of Turku through <a href="http://timmi.turku.fi/"><strong>Timmi</strong></a> service with your bank IDs. Unfortunately only part of the website is in English.</p>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#campusSport" aria-expanded="false" aria-controls="campusSport">CampusSport</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="campusSport">
+										<div class="card card-body">
+											<p>Services of <a href="http://www.campussport.fi/en/frontpage/"><strong>CampusSport</strong></a> are open for all the students and staff members of University of Turku, Turku University of Applied Sciences, Åbo Akademi University and Yrkeshögskolan Novia.</p>
+											<p>The versatile sports selection of CampusSport includes instructed sports classes (group workouts, combat sports, outdoor sports), sports shifts, five different gyms, a swimming pool and short courses. The weekly selection contains several classes of different levels, so that anyone can join in exercising. </p>
+											<p>You´ll find the schedule, class and course descriptions, fees and registration information <a href="http://www.campussport.fi/en/frontpage/"><strong>here</strong></a>. Inquiries: info@campussport.fi</p>
+											<p>The right to use the sport services can be bought at the online store of CampusSport. With this price, you can use all the sports facilities and classes that CampusSport has to offer. Check out the prices from CampusSport <a href="http://www.campussport.fi/en/info-en/"><strong>internet pages</strong></a>.</p>
+											<p> There are own teams for almost every sport within the University, so if you want to practice your sport within a team, you should ask from CampusSport or your faculty. CampusSport <strong><a href="http://www.campussport.fi/en/facilities/">facilities</a></strong> are located near the city center.</p>
+											<!--<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listCampussport" href="http://www.campussport.fi/en/facilities/">List of CampusSport Areas</button> <!-- Thynote: TODO Add popup for list -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#sportParks" aria-expanded="false" aria-controls="sportParks">Sport Parks</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="sportParks">
+										<div class="card card-body">
+											<p><a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/sports-park"><strong>Urheilupuisto</strong></a> is located next to Samppalinna Hill and it offers two basketball courts, a volley ball court (sand), three beach volley ball courts, two sand and two grass fields and a popular fitness path if you enjoy running. There are also five tennis courts, which can be booked for 5-10€ depending on time and day. Single or regular turn are available until the end of September.</p>
+											<p>In addition, there is a frisbee golf course and an athletics stadium, Paavo Nurmi Stadium.</p>
+											<p><a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/kupittaa-sports-centre"><strong>Kupittaa Sports Park</strong></a> lies at a walking distance from the city centre. There you can find e.g. a velodrome and BMX-track, sand and grass fields, a skateboarding facility and a sports hall with an affordable gym. In the vicinity, you might see football (soccer) players at Veritas Stadium, which is the home of Finnish football teams TPS and Inter.</p>
+											<!--<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listSportParks" value="urheilupuisto">List of Sport Parks</button> <!-- Thynote: TODO Add popup for list -->
+										</div>
+									</div>
+								</div>
+							</div>
+
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#athletics" aria-expanded="false" aria-controls="athletics">Athletics</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="athletics">
+														<div class="card card-body">
+															<p>There are three main athletics fields in Turku: The Paavo Nurmi Stadium, Jäkärlä athletics field and Kupittaa Sports Hall.</p>
+															<p><a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/paavo-nurmi-stadium"><strong>Paavo Nurmi Stadium</strong></a> is located at the sports park right in the city center of Turku. There is a 400 meter 8 track line and areas for field sports. Time slots are mainly for sports teams, but otherwise the field is open for everyone.</p>
+															<p><a href="http://www.turku.fi/en/places/jakarla-sports-parks-field"><strong>Jäkärlä Sports Park</strong></a> is located a few kilometers away from Turku city center. It has got a 300 metre running track and areas for throwing sports and high and long jumping. Time slots are mainly for sports teams, but otherwise it’s open for everyone, when there are no reservations.</p>
+															<p>An indoor athletics field is located in the <a href="https://www.turku.fi/en/places/kupittaa-sports-hall"><strong>Kupittaa Sports Hall</strong></a>. It’s open for everyone who has paid the entrance fee to the Sports Hall area.</p>
+															
+															<a href="../map.html?search=urheilukenttä"><button type="button" class="btn btn-dark btn-block">Let's do some sports!</button></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#basketball" aria-expanded="false" aria-controls="basketball">Basketball</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="basketball">
+														<div class="card card-body">
+															<p><strong>Basketball courts</strong> of the City of Turku are open for everyone and cannot be reserved in advance. Check out all the fields from City of Turku <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/courts-and-fields/basketball-courts"><strong>webpages</strong></a>.</p>
+															
+															<!--<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listBasketballCourts" value="koripallokenttÃ¤">List of Basketball Courts</button> <!-- Thynote: TODO Add popup for list -->
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#football" aria-expanded="false" aria-controls="football">Football</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="football">
+														<div class="card card-body">
+										                	<p>There are three main football fields near the Turku city center: Kupittaa, Urheilupuisto and Impivaara. Most of the football teams in Turku region train in these main grounds. If the grounds are not reserved for teams, everyone can play on them.</p>
+															<p><a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/kupittaa-sports-centre"><strong>Kupittaa</strong></a> has two artificial lawn grounds and one sand field. There is also the Veritas football stadium, but it’s only for professional use, as well as the grass fields nearby.</p>
+															<p><a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/sports-park"><strong>Urheilupuisto</strong></a> has one artificial lawn ground and one sand field.</p>
+															<p><a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/impivaara-sports-centre"><strong>Impivaara Football Hall</strong></a> is the only place where there are public hours during the winter.</p>
+															<p>In addition there are many smaller fields around the city such as <a href="http://www.turku.fi/en/places/parkki-field"><strong>Parkki field</strong></a>, which are more often free for anyone to play.</p>
+															<p>You can check the availability of the fields from <a href="http://timmi.turku.fi/"><strong>Timmi</strong></a> reservation planner.</p>
+														<!-- old list button <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listFootballFields" value="jalkapallokenttÃ¤">List of Football Fields</button> <!-- Thynote: TODO Add popup for list -->
+															<!--<a href="../map.html?search=footballList&manual=true"><button type="button" class="btn btn-dark btn-block" >Football on map</button></a>--> 
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#gyms" aria-expanded="false" aria-controls="gyms">Gyms</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="gyms">
+														<div class="card card-body">
+															<p>There are few gyms run by the City of Turku and they are connected with other sports facilities such as <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/impivaara-sports-centre"><strong>Impivaara</strong></a> and <a href="https://www.turku.fi/en/places/kupittaa-sports-hall"><strong>Kupittaa</strong></a>. They are bit cheaper than the private gyms, especially if you don’t go to gym regularly.</p> 
+										    <p>You can also find <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/outdoor-sports-facilities/outdoor-gym-devices"><strong>outdoor gym equipments</strong></a> next to some outdoor jogging trails.</p>
+										    <p> In addition there are a bunch of private gyms around Turku area. Below is a list of some of them. Remember to ask, if they offer student discounts! Unfortunately all pages are only in Finnish, but at the gyms personnel will most likely also speak English. Note, all gyms sauna!</p>
+										<p><a href="http://www.manhattansportcenter.fi/"><strong>Manhattan Sport Centre</strong></a> has many possibilities, such as badminton, indoor bandy, squash, basketball, tennis, floorball and table tennis <a href="../map.html?search=Pitkämäenkatu 4 B Turku&event=true">Pitkämäenkatu 4 B</a></p>
+										    <p><a href="http://www.mmkuntotalo.com/"><strong>M&M Kuntotalo</strong></a> has 2 centers in Turku area  and 1 in Raisio . They offer lots of different sport options: fitness classes, gym, spinning, badminton, street basket, beach volley, table tennis etc. Centers in Turku <a href="../map.html?search=Lemminkäisenkatu 32 A Turku&event=true">Kupittaa - Lemminkäisenkatu 32 A</a> and <a href="../map.html?search=Koulukatu 29 Turku&event=true">Koulukatu 29</a>, Raisio <a href="../map.html?search=Raisiontori 5 Raisio&event=true">Raisiontori 5</a></p>
+										    <p><a href="https://www.motivus.fi/kuntokeskukset/centrum"><strong>Motivus Centrum</strong></a> offers two gym areas (the other one only for women) and fitness classes. <a href="../map.html?search=Eerikinkatu 7 Turku&event=true">Eerikinkatu 7</a></p>
+										    <p><a href="https://sali82.fi"><strong>Sali82</strong></a> is a gym suitable for beginners as well as advanced enthusiasts. <a href="../map.html?search=Artturinkatu 2 Turku&event=true">Artturinkatu 2, Turun Saippua Center</a></p>
+										    <p><a href="https://www.elixia.fi/Liikuntakeskuksemme/turku/"><strong>Elixia</strong></a> has 4 centers in Turku area with various fitness classes, gym and cycling. </br>
+										<a href="../map.html?search=Kristiinankatu 8 Turku&event=true">Centrum-Kristiinankatu 8</a></br>
+										<a href="../map.html?search=Itäinen Rantakatu 60 Turku&event=true">Jokivarsi-Itäinen Rantakatu 60</a></br>
+										<a href="../map.html?search=Viilarinkatu 4 Turku&event=true">Länsikeskus-Viilarinkatu 4</a></br>
+										<a href="../map.html?search=Lemminkäisenkatu 32 Turku&event=true">Trivium-Lemminkäisenkatu 32</a>
+										</p>
+															
+															<a href="../map.html?search=gyms in Turku"><button type="button" class="btn btn-dark btn-block">Time to sweat?</button></a> 
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#iceSkating" aria-expanded="false" aria-controls="iceSkating">Ice hockey and Skating</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="iceSkating">
+														<div class="card card-body">
+															<p><strong>Natural Ice Rinks</strong>
+															<p>The natural ice rinks are often sand or artificial lawn fields that are transformed to ice rinks when the weather is cold enough. They are usually equipped with changing rooms and lighting from 9am to 9pm. In most cases these natural ice rinks cannot be reserved and are free and open for everyone. You can check the locations and the ice condition from <a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/outdoor-sports-facilities/ice-skating-rinks/natural-1"><strong>here</strong></a>. If the winter weather is cold enough, it is also possible to go skating on a sea or lake. Please check the ice conditions beforehand!</p>
+											<p><strong>Artificial Ice Rinks</strong></p> 
+										    <p><a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/ice-skating-rinks/park-field-artificial-ice-rink"><strong>Park Field</strong></a> is located in the middle of the city center (<a href="../map.html?search=Tuureporinkatu 2 Turku&event=true">Tuureporinkatu 2</a>) and is open daily from 8am to 10pm. The skating area can be used at any time during opening hours and cost 2€. There are separate areas for skating and hockey. It is also possible to rent skates at the field.</p>
+											<p>In addition there are two ice halls, <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/ice-halls/impivaara-ice-hall"><strong>Impivaara Ice Hall</strong></a> (<a href="../map.html?search=Eskonkatu 1 Turku&event=true">Eskonkatu 1</a>) and <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/ice-halls/varissuo-ice-hall"><strong>Varissuo Ice Hall</strong></a> (<a href="../map.html?search=Kraatarinkatu 4 Turku&event=true">Kraatarinkatu 4</a>). These halls are mostly reserved for sports teams, yet there are some public hours for skating.</p>
+										    <p>If you didn't know, in Finland ice hockey is considered to be a kind of a national sport. In Turku there are two major teams, <a href="http://hc.tps.fi/briefly-english/"><strong>TPS</strong></a> and <a href="http://www.tutohockey.fi/fi/uutiset"><strong>TUTO</strong></a> (pages only in Finnish) and many other smaller teams.</p>
+														<!--	<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listSkatingPlaces" value="luistelukenttÃ¤">List of Skating Places</button> <!-- Thynote: TODO Add popup for list -->
+															
+														<!--	<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listHockeyPlaces" value="jÃ¤Ã¤kiekkohalli">List of Hockey Places</button> <!-- Thynote: TODO Add popup for list -->
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#skateboarding" aria-expanded="false" aria-controls="skateboarding">Skateboarding</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="skateboarding">
+														<div class="card card-body">
+											<p><a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/outdoor-sports-facilities/skateparks"><strong>City of Turku</strong></a> maintains one skateboard hall and eight skateboarding places and skateparks. <a href="https://www.turku.fi/toimipaikat/skeittihalli-cube"><strong>The skateboard hall Cube</strong></a> (pages only in Finnish) is located a few kilometres away from the city center towards Ruissalo area. Skateparks closest to the city center are at <a href="../map.html?search=Kupittaankatu 18 Turku&event=true">Kupittaankatu 18</a> and at <a href="../map.html?search=Pernontie 16 Turku&event=true">Pernontie 16</a>.</p>
+											<p><a href="../map.html?search=skateboard park near turku"><button type="button" class="btn btn-dark btn-block">Ready for some skateboarding?</button></a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#skiTracks" aria-expanded="false" aria-controls="skiTracks">Skiing</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="skiTracks">
+														<div class="card card-body">
+															<p>The City of Turku maintains over 50 km of ski tracks in total on jogging trails. Most of the ski tracks are dependent on the snow situation. More information of skiing and the condition of the tracks can be found from the City of Turku <a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/outdoor-sports-facilities/lets-go-skating-and-skiing"><strong>website</strong></a>. Skiing equipment can be rented from the <a href="http://www.turku.fi/en/culture-and-sports/recreation/trails-routes-and-ski-tracks/ski-tracks/impivaara-ski-rental-service"><strong>Impivaara Ski Rental Service</strong></a>.</p>
+														<!--	<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listSkiTracks" value="hiihtoladut">List of Ski Tracks</button> <!-- Thynote: TODO Add popup for list -->
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#swimming" aria-expanded="false" aria-controls="swimming">Swimming</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="swimming">
+														<div class="card card-body">
+															<p><a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/swimming-places-and-water-sport/kupittaa-outdoor"><strong>Kupittaa Outside Pool Area</strong></a> is a refreshing zone to spend time in the summer. It is located in the middle of Kupittaa Park. The pool area contains a big pool for swimming and playing, a swimming pool for training swimming, a childrens pool, a small wading pool, a big waterslide and organized water exercise 4 times a week. You can even bring your own packed lunch with you to the area (as long as it doesn’t contain alcohol).</p>
+															<p><a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/swimming-places-and-water-sport/samppalinna-outdoor-1"><strong>Samppalinna Outside Swimming Area</strong></a> is usually open from the beginning of May to the beginning of September.</p>
+															<p><a href="http://en.turunuimahalli.palvelee.fi/"><strong>Turun Uimahalli</strong></a> has been recently renovated and located right next to the University of Turku.</p>
+															<p><a href="http://www.turku.fi/en/impivaara-swimming-centre"><strong>Impivaara Swimming Hall</strong></a> is located in the Impivaara sports center area a few kilometers away from the city centre.</p>
+															<p><a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/indoor-swimming-pools/petrelius-swimming-hall"><strong>Petrelius Swimming Hall</strong></a> is located in the southern part of Turku.</p>
+															<p>In addition there is a privately owned <a href="https://www.holidayclubresorts.com/en/resorts/caribia/spa-and-treatments/"><strong>Spa and Congress Hotel Caribia</strong></a> right next to the student village. It has to offer multiple pools and a spa area.</p>
+															
+															<a href="../map.html?search=swimming pool near Turku"><button type="button" class="btn btn-dark btn-block">Ready for swimming?</button></a>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#tennis" aria-expanded="false" aria-controls="tennis">Tennis</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="tennis">
+														<div class="card card-body">
+															<p class = "text-cener">There are clay, artificial lawn and asphalt surface courts for tennis players in Turku. Clay courts can be used only with reservation. Other courts can be used by anyone if they are free. </p>
+															<p>The closest courts to the city centre are Pansio (2 courts), <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/impivaara-sports-centre"><strong>Impivaara</strong></a> (4 courts) and <a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/sports-park"><strong>Urheilupuisto</strong></a> (5 courts). Other courts can be found <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/courts-and-fields/tennis-courts"><strong>here</strong></a>.</p>
+															<p>There is also a private tennis hall named after former Finnish tennis player Jarkko Nieminen a few kilometers away from the city center at Impivaara. You can reserve courts through their <a href="http://www.jarkkonieminenareena.fi/"><strong>website</strong></a>.</p>
+															<p>You can see all the tennis courts on the map. The tennis courts maintained by the City of Turku can be reserved through <a href="http://timmi.turku.fi/"><strong>Timmi</strong></a> reservation planner (only partly in English).</p>
+														
+														    <a href="../map.html?search=tenniskenttä"><button type="button" class="btn btn-dark btn-block">Ready to play?</button></a>    
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#volleyball" aria-expanded="false" aria-controls="volleyball">Volleyball</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="volleyball">
+														<div class="card card-body">
+															<p>City of Turku has <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/courts-and-fields/volleyball-courts"><strong>outdoor volleyball courts</strong></a> that have a stone dust surface. Usage of volleyball courts doesn't require reservation and they are open for everyone excluding the one on Sports Park (Urheilupuisto).</p>
+                							    			<p>You can use beach volleyball courts free of charge. All the courts can be used by anyone if there is no reservation.  Single turns can be easily booked online. There are 10 beach volleyball courts in Turku (<a href="http://www.turku.fi/en/services/beach-volleyball-courts"><strong>Check out locations!</strong></a>) Closest ones to city center are 4 courts in <a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/sports-park"><strong>Urheilupuisto</strong></a> and 2 in <a href="https://www.turku.fi/en/culture-and-sports/sports/sports-facilities/sports-centres/kupittaa-sports-centre"><strong>Kupittaa</strong></a>.</p>
+														<!--	<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listVolleyballCourts" value="lentopallo">List of Volleyball Courts</button> <!-- Thynote: TODO Add popup for list -->
+														<!--	<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="listBeachVolleyballCourts" value="Beach Volleyball Court Near Turku, Finland">List of Beach-Volleyball Courts</button> <!-- Thynote: TODO Add popup for list -->
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<p>
+												<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#yoga" aria-expanded="false" aria-controls="yoga">Yoga and Pilates</button>
+											</p>
+											<div class="row justify-content-center">
+												<div class="col-12">
+													<div class="collapse multi-collapse" id="yoga">
+														<div class="card card-body">
+															<p>Yoga and pilates are growing their popularity and there are good selection of lessons in Turku. Internet pages are only in Finnish, but please visit the centers for more information.</p> 
+											<p><a href="https://www.powau.com/"><strong>Powau</strong></a> offers versatile yoga and pilates lessons and they have two studios located in the city center (<a href="../map.html?search=Eerikinkatu 7 Turku&event=true">Eerikinkatu 7</a>) and in Martti (<a href="../map.html?search=Martinkatu 5 Turku&event=true">Martinkatu 5</a>). Aerial yoga is their specialty in the Martti studio.</p>
+											 <p><a href="https://oasisturku.fi/"><strong>Oasis Yoga & Pilates Studio</strong></a> has specilized in reformer pilates amongst more traditional lessons (<a href="../map.html?search=Kerttulinkatu 1 Turku&event=true">Kerttulinkatu 1</a>).</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+							<p>
+<!--								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#reservatingAreas" aria-expanded="false" aria-controls="reservatingAreas">Reserving Time Slots Online</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="reservatingAreas">
+										<div class="card card-body">
+											<p class = "text-cener">You can reserve sports and exercise time slots online in <a href="http://timmi.turku.fi/"><strong>Timmi</strong></a>, a website maintained by Turku city. Unfortunately, the Timmi reservation planner is currently available only in Finnish.</p>
+											</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+  </body>
+  <script src="../scripts/lists.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="musicContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/hum-publiikki-15_hires.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Musiikki</h5>
+							<p>Musiikkia voi harrastaa Turussa monipuolisesti eri paikoissa, bändeissä ja kuoroissa. Valitse juuri sinulle sopiva alapuolelta.
+							</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#bandAndOrchestras" aria-expanded="false" aria-controls="bandAndOrchestras">Bändit ja orkesterit</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="bandAndOrchestras">
+										<div class="card card-body">
+											<p class = "text-cener">Mikäli osaat soittaa tai laulaa, Turun alueella on useita orkestereita tai bändejä, joihin voit liittyä.</p>
+											<p><strong>Klassinen musiikki</strong></br>
+											<a href="http://www.akademiskaorkestern.fi/lang/fin"><strong>Akademiska Orkestern</strong></a></p>
+											
+											<p><strong>Big band</strong></br>
+											<a href="http://www.axelbandet.fi/"><strong>Axelbandet</strong></a></br>
+											<a href="http://www.sohontorwet.com/fi/uutiset/"><strong>Sohon Torwet</strong></a></p>
+											
+											<p><strong>Rock & Pop</strong><br/><a href="http://users.abo.fi/raa/"><strong>RÅA - Rockföreningen vid Åbo Akademi</strong></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#choirs" aria-expanded="false" aria-controls="choirs">Kuorot</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="choirs">
+										<div class="card card-body">
+											<p class = "text-cener"><strong>Turun yliopistolla</strong> on kolme opiskelijakuoroa: Turun Yliopiston kuoro, Arrhytmics naislaulajille ja Cantus Mercurialis Turun kauppakorkeakoulusta. Lisätietoja voi kysellä kuorojen toimistoilta.</p>
+											<p><a href="http://www.yliopistonkuoro.fi/"><strong>Turun yliopiston kuoro</strong></a> (TYY:n kuoro) sähköposti: raati@yliopistonkuoro.fi</br>
+											<a href="https://naiskuorofi.wordpress.com/"><strong>Arrhytmics</strong></a> sähköposti: arrhythmicskuoro@gmail.com</br>
+											<a href="http://www.cantusmercurialis.fi/"><strong>Cantus Mercurialis</strong></a> sähköposti: puheenjohtaja@cantusmercurialis.fi</p>
+											<p><strong>Åbo Akademilla</strong> on kaksi kuoroa: Brahe Djäknar mieslaulajille ja Florakören naislaulajille.</p>
+											<p><a href="http://www.brahedjaknar.fi/suomeksi.php"><strong>Brahe Djäknar</strong></a> sähköposti: styrelsen@brahedjaknar.fi</br>
+											<a href="http://www.florakoren.fi/"><strong>Florakören</strong></a> sähköposti: flora@abo.fi</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#musicLessons" aria-expanded="false" aria-controls="musicLessons">Musiikkiopetus</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="musicLessons">
+										<div class="card card-body">
+											<p class = "text-cener">Turussa on mahdollista ottaa musiikkitunteja useissa eri paikoissa. Katso tarkemmat tiedot eri oppilaitosten omilta sivuilta.</p>
+											<p><a href="http://www.tsmo.fi/"><strong>Turun seudun musiikkiopisto</strong></a></br>
+											<a href="http://www.turunkonservatorio.fi/"><strong>Turun konservatorio</strong></a></br>
+										    <a href="http://www.tunmky.fi/musiikki/musiikkiopisto/"><strong>Turun NMKY:n musiikkiopisto</strong></a></br>
+											<a href="http://www.poprockjazz.com/"><strong>PopRockJazz Oppilaitos</strong></a></br>
+											<a href="http://www.piano-opistosalonen.com/"><strong>Piano-opisto Salonen</strong></a></br>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+  </body>
+  <script src="../scripts/lists.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>  
+			
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="leCss.css">
+													 
+		<!-- Optional JavaScript -->
+		<script src="../progress.js"></script>
+		 <script src="scripts/dashboard.js"></script>
+		 
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+	<header class="navbar fixed-top navbar-light bg-light">
+		<div class="container">
+			<a class="nav-item nav-link" href="index.html"><img class="svg-size" src="../img/Resources/Icons/home_black.svg" /></a>
+			<a class="nav-item nav-link" href="campusMap.html"><img class="svg-size-camp" src="../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+			<a class="nav-item nav-link" href="profile.html"><img src="../img/user-white.png" /></a>
+		</div>
+	</header>
+	
+	<section class="container homeBG" id="homeContainer">
+		
+		<div class="row justify-content-between no-gutters homeBG">
+			<div class="col-12 mb-0 homeBG"  >
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<figure class="figure">
+								<a href="info_pages/info_transport.html"><img class="figure-img img-fluid" src="../img/Images/transport.png" />
+									<p class="centered">Miten kuljet Turussa?</p>
+								</a>
+							</figure>
+						</div>
+						<div class="carousel-item">
+							<figure class="figure">
+								<a href="info_pages/info_housing.html"><img class="figure-img img-fluid" src="../img/Images/accomodation_AdobeStock_63180709.png" />
+									<p class="centered">Löydä katto pääsi päälle</p>
+								</a>
+							</figure>
+						</div>
+						<div class="carousel-item">
+							<figure class="figure">
+								<a href="info_pages/info_fun.html"><img class="figure-img img-fluid" src="../img/Images/games_AdobeStock_84860408.png" />
+									<p class="centered">Pidä hauskaa!</p>
+								</a>
+							</figure>
+						</div>				
+						<div class="carousel-item">
+							<figure class="figure">
+								<a href="info_pages/info_sports.html"><img class="figure-img img-fluid" src="../img/Images/sports 3.png" />
+									<p class="centered">Pysy vireessä!</p>
+								</a>
+							</figure>
+						</div>
+						<div class="carousel-item">
+							<figure class="figure">
+								<a href="info_pages/info_cafes.html"><img class="figure-img img-fluid" src="../img/Images/cafe 4.png" />
+									<p class="centered">Mennäänkö kahville?</p>
+								</a>
+							</figure>
+						</div>
+						<div class="carousel-item">
+							<figure class="figure">
+								<a href="info_pages/info_experiences.html"><img class="figure-img img-fluid" src="../img/Images/culture_experience.png" />
+									<p class="centered">Elämyksiä Turussa</p>
+								</a>
+							</figure>
+						</div>
+						
+					</div>
+					
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+		
+			</div>
+					
+			<div class="col-6 pr-1 homeBG"  >
+				<figure class="figure">
+					<a href="https://www.lounaat.info/ty"><img class="figure-img img-fluid" src="../img/Images/lunch.png" />
+						<p class="centered">Lounaslistat</p>
+					</a>
+				</figure>
+			</div>
+
+			<div class="col-6 pl-1 homeBG" >
+				<figure class="figure">
+					<a href="events.html"><img class="figure-img img-fluid" src="../img/Images/events_dash.png" />
+						<p class="centered">Tapahtumat</p>
+					</a>
+				</figure>
+			</div> 
+		</div>
+		
+	</section>
+	<footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../img/Resources/Icons/city_info_white_circle.svg" />
+					<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="shoppingContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/shopping 2.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Ostokset</h5>
+							<p>Turussa on useita mahdollisuuksia shoppailuun ostokeskuksista pieniin putiikkeihin. Alueella on myös useita kirppiksiä ja second hand -liikkeitä sekä erilaisia pop up -kauppoja ja markkinoita ympäri vuoden.</p>
+									<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#malls" aria-expanded="false" aria-controls="malls">Ostoskeskukset</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="malls">
+										<div class="card card-body">
+											<p><a href="https://hansakortteli.fi/"><strong>Hansakortteli</strong></a> on Turun keskustassa sijaitseva ostoskeskus, jossa on useita muodin, elektroniikan, urheilun, vapaa-ajan ja kodinsisustamisen liikkeitä. Hansassa on lisäksi yli 30 ravintolaa ja kahvilaa, joista suurin osa on keskittynyt food court -alueelle.</p>
+											<p><a href="http://forumkortteli.fi/"><strong>Forum Kortteli</strong></a> on Turun keskustassa sijaitseva ostoskeskus, jossa on usein kiinnostavia pop-up kauppoja ja suomalaista designia.</p>
+											<p><a href="http://www.kop-kolmio.fi/"><strong>KOP-kolmio</strong></a> on kompakti ostoskeskus Turun keskustassa aivan torin laidalla.</p>
+											<p><a href="https://www.skanssi.fi/"><strong>Skanssi</strong></a> on yli 90 liikkeen ostoskeskus, joka sijaitsee noin 5 km Turun keskustasta. Valikoima keskittyy erityisesti muotiin. Ostoskeskuksessa on myös Citymarket.</p>
+											<p>Kauppakeskus <a href="http://www.kauppakeskusmylly.fi/"><strong>Mylly</strong></a> sijaitsee noin 9 km Turun keskustasta. Myllystä löytyy noin 150 erilaista liikettä sekä ravintoloita, palveluita ja Prisma.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#departmentStores" aria-expanded="false" aria-controls="departmentStores">Tavaratalot</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="departmentStores">
+										<div class="card card-body">
+											<p><strong><a href="https://info.stockmann.com/info/tavaratalot/turku/">Stockmann</a></strong> sijaitsee Hansa-korttelissa ja tarjoaa monipuolisesti kosmetiikan, muodin ja kodinsisustamisen tuotteita sekä ruokakaupan tavaratalon pohjakerroksessa.</p>
+											<p><strong><a href="https://www.sokos.fi/fi/sokos/myymalat/sokos-wiklund-turku">Sokos</a></strong> (tunnetaan nimellä Wiklund) sijaitsee Kauppatorin laidalla ja tarjoaa erityisesti kosmetiikan ja muodin tuotteita sekä ruokakaupan tavaratalon pohjakerroksessa. Sokoksen tiloissa toimii myös muita erikoisliikkeitä.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#hardwareStores" aria-expanded="false" aria-controls="hardwareStores">Kodin tavarat</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="hardwareStores">
+										<div class="card card-body">
+											<p><strong><a href="http://www.ikea.com/fi/fi/store/raisio">Ikea</a></strong> on edullinen ja monipuolinen huonekalujen ja muiden kodin tavaroiden ostopaikka. Lähin Ikea sijaitsee Raisiossa, jonne pääsee busseilla 2, 302, 303, 220, 221 ja 300 (tarkasta mahdolliset muutokset). Ikean lähellä on myös muita kodin sisustamisen ja remontoinnin liikkeitä.</p>
+											<p><strong><a href="https://www.clasohlson.com/fi/">Clas Ohlson</a></strong> myy kodin elektroniikkaa, sisustustarvikkeita ja remontointiin tarvittavia tuotteita. Liikkeet sijaitsevat Turun keskustassa Forumin korttelissa ja Skanssin ostoskeskuksessa.</p>	
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#secondhandStores" aria-expanded="false" aria-controls="secondhandStores">Second Hand -myymälät</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="secondhandStores">
+										<div class="card card-body">
+											<p><strong>Vaatteet ja pientavara</strong><br/>
+											<p><strong><a href="http://www.kirppiscenter.fi/">KirppisCenter</a></strong> on Turun suurin itsepalvelukirpputori ja sillä on kaksi toimipistettä, Länsinummi ja Manhattan.</p>
+											<p><strong><a href="http://www.tsemppi.net/kirppis.html">Laiskan kirppis</a></strong> sijaitsee osoitteessa <a href="../map.html?search=Vanha Hämeentie 29 Turku&event=true">Vanha Hämeentie 29</a> ja tarjoaa myyjille kaupungin alhaisimman viikkohinnan.</p>
+											<p><strong><a href="http://olganeiti.kotisivuni.org/">Olga-Neiti</a></strong> on vaatteisiin ja asusteisiin erikoistunut second hand -kauppa Turun keskustassa, osoitteessa <a href="../map.html?search=Yliopistonkatu 15 g Turku&event=true">Yliopistonkatu 15 g</a>. Voit viedä sesonkituotteita myyntiin maanantaisin.</p>
+											<p><strong><a href="https://www.pelastusarmeija.fi/kirpputori">Pelastusarmeijalla</a></strong> on Turun seudulla useampi myynti- ja tavaroiden keruupiste. Voit lahjoittaa myytäviä tuotteita ja tuotot menevät haastavassa elämäntilanteessa olevien auttamiseen.</p>
+											<p><strong><a href="https://www.puutorinkirppis.fi/">Puutorin kirppis</a></strong> on uusi ja nykyaikainen itsepalvelukirppis keskustassa, osoitteessa <a href="../map.html?search=Brahenkatu 14 Turku&event=true">Brahenkatu 14</a> (sisäpiha).</p>
+											<p><strong><a href="http://uff.fi">UFF Turku</a></strong> myy erityisesti vaatteita ja sijaitsee keskustassa osoitteessa <a href="../map.html?search=Humalistonkatu 5 Turku&event=true">Humalistonkatu 5</a>. Voit lahjoittaa UFF:lle vaatteita useissa keräyspisteissä.</p>
+											<p><strong>Huonekalut ja muut suuremmat tavarat</strong><br/>
+											<p><strong><a href="http://turunekotori.fi">Ekotori</a></strong> on Kestävän Kehityksen Yhdistys ry:n hallinnoima ympäristötoimija, joka kierrättämisen ohella työllistää laajassa mittakaavassa. Ekotori ottaa vastaan ja myy eteenpäin huonekaluja, polkupyöriä, elektroniikkaa ym. kodin tavaraa. Ekotorilla on kaksi toimipistettä osoitteissa <a href="../map.html?search=Rautakatu 12 Turku&event=true">Rautakatu 12</a> ja <a href="../map.html?search=Rieskalähteentie 74 Turku&event=true">Rieskalähteentie 74</a>.</p>
+											<p><strong><a href="https://kontti.punainenristi.fi/turku">Kontti</a></strong> myy monipuolista kodin tavaraa ja ottaa lahjoituksia vastaan. Tarvittaessa he noutavat lahjoitetut huonekalut ja toimittaa niitä ostajille maksua vastaan. Valtaosa tuotoista käytetään Punaisen ristin hyväntekeväisyystyöhön. Turun kontti sijaitsee osoitteessa <a href="../map.html?search=Satakunnantie 105 Turku&event=true">Satakunnantie 105</a>.</p>
+											<p><strong><a href="https://www.tori.fi/">Tori.fi</a></strong> on monipuolinen nettikirppis, josta löytyy kaikkea mahdollista vaatteista pientavaraan ja huonekaluista asuntoihin.</p>
+											<p>Lisäksi Turussa järjestetään useita pop-up kirppiksiä ja tapahtumia, kuten <strong><a href="http://www.kareninkirppis.com/">Kårenin kirppis</a></strong>, Kirjakahvilan <strong><a href="https://www.facebook.com/events/286511388539816/">Lauantaikirppis</a></strong> ja <strong><a href="http://siivouspaiva.com/fi/cleaningday">Siivouspäivä</a></strong>. Erityisesti siivouspäivästä on tullut suosittu kaupunkitapahtuma, jossa ihmiset etsivät sopivan myyntipaikan puistosta tai kaduilta ja kokoontuvat tekemään löytäjä muutaman kerran vuodessa.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

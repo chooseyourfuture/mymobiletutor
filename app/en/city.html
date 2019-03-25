@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>  
+	   
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="leCss.css">
+													 
+		<!-- Optional JavaScript -->
+		<script src="../progress.js"></script>
+		<script src="scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+	<header class="navbar fixed-top navbar-light bg-light">
+		<div class="container">
+			<a class="nav-item nav-link" href="index.html"><img class="svg-size" src="../img/Resources/Icons/home_white.svg" /></a>
+		<a class="nav-item nav-link" href="campusMap.html"><img class="svg-size-camp" src="../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+			<a class="nav-item nav-link" href="profile.html"><img src="../img/user-white.png" /></a>
+		</div>
+	</header>
+	<section class="container mainContainers" id="cityContainer">		
+		<div id="accordion" role="tablist">
+			<div class="card">
+				<a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+					<div class="card-header city-cards-sizes" role="tab" id="headingOne">
+						<h5 class="mb-0">
+							Everyday Life
+						</h5>
+					</div>
+				</a>
+				<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+					<div class="card-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-4  text-center">
+									<a href="info_pages/info_transport.html">
+										<figure class="figure">
+											<img src="../img/Resources/Icons/transport.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Transport</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-4  text-center">
+									<a href="info_pages/info_shopping.html">
+										<figure class="figure">
+											<img src="../img/Resources/Icons/shopping.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Shopping</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-4  text-center">
+									<a href="info_pages/info_groceries.html">
+										<figure class="figure">
+											<img src="../img/Resources/Icons/groceries.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Groceries</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-4  text-center">
+									<a href="info_pages/info_housing.html">
+										<figure class="figure">
+											<img src="../img/Resources/Icons/accomodation.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Housing</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-4  text-center">
+									<a href="info_pages/info_services.html">
+										<figure class="figure">
+											<img src="../img/Resources/Icons/services.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Services</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-4  text-center">
+									<a href="info_pages/info_health.html">
+										<figure class="figure">
+											<img src="../img/Resources/Icons/health.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Health</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-4  text-center">
+									<a href="info_pages/info_fun.html">
+										<figure class="figure">
+											<img src="../img/Resources/Icons/entertainment.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Fun</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-4  text-center">
+									<a href="info_pages/info_safety.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/safety.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Safety</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-4  text-center">
+									<a href="info_pages/info_religion.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/religion.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Religion</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+					<div class="card-header city-cards-sizes" role="tab" id="headingTwo">
+						<h5 class="mb-0">
+							Hobbies
+						</h5>
+					</div>
+				</a>
+				<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="card-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-6  text-center">
+									<a href="info_pages/info_sports.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/sports.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Sports</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-6  text-center">
+									<a href="info_pages/info_music.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/music.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Music</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6  text-center">
+									<a href="info_pages/info_artsandcrafts.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/art_crafts.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Arts and Crafts</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-6  text-center">
+									<a href="info_pages/info_outdoors.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/outdoors.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Outdoors</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+					<div class="card-header city-cards-sizes" role="tab" id="headingThree">
+						<h5 class="mb-0">
+							Food and Drink
+						</h5>
+					</div>
+				</a>
+				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+					<div class="card-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-6  text-center">
+									<a href="info_pages/info_studentlunch.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/student_lunch.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Student lunch</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-6  text-center">
+									<a href="info_pages/info_restaurants.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/restaurant.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Restaurants</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6  text-center">
+									<a href="info_pages/info_cafes.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/cafes.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Cafes</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-6  text-center">
+									<a href="info_pages/info_nightlife.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/nightlife.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Nightlife</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<a class="collapsed" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+					<div class="card-header city-cards-sizes" role="tab" id="headingFour">
+						<h5 class="mb-0">
+							Culture
+						</h5>
+					</div>
+				</a>
+				<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+					<div class="card-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-6  text-center">
+									<a href="info_pages/info_socialhabits.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/habits.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Social Habits</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-6  text-center">
+									<a href="info_pages/info_artsandculture.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/artandculture.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Arts and Culture</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-6  text-center">
+									<a href="info_pages/info_publicholidays.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/holidays.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Public Holidays</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="col-6  text-center">
+									<a href="info_pages/info_experiences.html">
+										<figure class="figure">
+											<img  src="../img/Resources/Icons/experience.svg" class="figure-img img-fluid svg-size" alt="Image File">
+											<figcaption class="figure-caption">Experiences</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	<footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

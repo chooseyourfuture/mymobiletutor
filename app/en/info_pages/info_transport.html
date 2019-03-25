@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="transportContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/transport.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Transport</h5>
+							<p class="card-text">Finland has good infrastructure and Turku is a convenient city for students, as most of the necessities are within walking or biking distance. Transportation alternatives within and from Turku are numerous. It has bus and train stations, an airport and well organized public transportation network.</p>
+	
+							<p class= "text-center">
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#cityBus" aria-expanded="false" aria-controls="cityBus">City Bus</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="cityBus">
+										<div class="card card-body">
+											<p>Public transportation in Turku and its surrounding areas is organized by <a href="https://www.foli.fi/en"><strong>Föli</strong></a>. Föli is a joint bus transportation platform organized by six municipalities: Turku, Kaarina, Raisio, Naantali, Lieto and Rusko. Passengers thus have the possibility to travel in these areas using this single service.</p>	
+											<p>Students are entitled to discounts by presenting either a valid student card or a filled enrollment form while purchasing a bus card.</p>
+											<p>A bus card can be purchased in Turku from the Föli public transportation service offices and will cost 5 euros + chosen value. After purchasing the card, added value can be loaded via service offices, Internet payment, mobile app or with cash in a bus. A single journey ticket can be bought from busses and in mobile app and lasts for two hours. However, a single trip bought from a bus is more expensive than one loaded on a bus card.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<p class= "text-center">
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#taxi" aria-expanded="false" aria-controls="taxi">Taxi Services</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="taxi">
+										<div class="card card-body">
+											<p><a href="http://turuntaksit.fi/"><strong>Turku Taxis</strong></a> (Turun Taxit, webpages only in Finnish) are a fast and convenient way of getting across the city and are considered very safe in Finland. Although they can be quite expensive compared to public alternatives, sharing a taxi with friends can make the cost per person quite competitive.</p>
+											<p><strong>Turun Taksit</strong><br/>02 10041</p>
+											<p>Uber is starting its operations in Finland, check the availability in Turku from their <a href="https://www.uber.com"><strong>website</strong></a>.</p>									
+										</div>
+									</div>
+								</div>
+							</div>							
+														
+							<p class= "text-center">
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#intercityBuses" aria-expanded="false" aria-controls="intercityBuses">Intercity Buses</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="intercityBuses">
+										<div class="card card-body">
+											<p><a href="https://www.matkahuolto.fi/en/"><strong>Matkahuolto</strong></a> manages bus stations in Finland and offers timetables and ticket sales for most bus transportation services. Tickets can be purchased either online or on the bus. You can get a discount with a valid student card. <a href="https://www.matkahuolto.fi/en/timetables-and-prices/discount-terms"><strong>Read more</strong></a> about discount prices.</p>
+											<p><a href="https://www.onnibus.com/home"><strong>Onnibus</strong></a> is an inexpensive alternative with good connections to major cities. Buses leave from the Main Bus Station and few of them leave from the harbor. Tickets can be purchased either online or on the bus.</p>
+											<p>Students are entitled to student discounts when presenting a valid student card.</p>
+											<p>Long distance buses depart from the Turku bus station. Some of them pick up and drop off passengers in bus stops within the city. Blue-white signs stands for long distance buses and yellow-black signs for local ones.</p>
+											<p><strong>Main Bus Station</strong><br/><a href="../map.html?search=Läntinen Pitkäkatu 7-9 Turku&event=true">Läntinen Pitkäkatu 7-9</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p class= "text-center">
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#trains" aria-expanded="false" aria-controls="trains">Trains</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="trains">
+										<div class="card card-body">
+											<p><a href="https://www.vr.fi/cs/vr/en/frontpage"><strong>VR</strong></a> (Valtion rautatiet) provides train services in Finland. VR offers a wide array of destinations within Finland. Tickets can be purchased either online or at the train station.</p>
+											<p>Students are entitled to student discounts when presenting a valid student card, <a href="https://www.vr.fi/cs/vr/en/students_new"><strong>read more about discount prices</strong></a>. </p>
+											<p><strong>Turku Main Railway Station</strong><br/><a href="../map.html?search=Ratapihankatu 37 Turku&event=true">Ratapihankatu 37</a></p>
+											<p><strong>Kupittaa Railway Station</strong><br/><a href="../map.html?search=Joukahaisenkatu 6 Turku&event=true">Joukahaisenkatu 6</a></p>				<p><strong>Harbor Railway Station</strong><br/><a href="../map.html?search=Satamakatu 1 Turku&event=true">Satamakatu 1</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p class= "text-center">
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#airports" aria-expanded="false" aria-controls="airports">Flights and Ships</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="airports">
+										<div class="card card-body">
+											<b>Flights</b><p>
+											<p><a href="https://www.finavia.fi/en/airports/turku"><strong>Turku Airport</strong></a> is a convenient way of arriving or departing to and from Turku. The airport can be reached conveniently by taking the number 1 bus from the T40* stop (check for possible changes from <a href="https://www.foli.fi/en"><strong>Föli</strong></a>) in Kauppatori.</p>
+											<p><a href="https://www.finavia.fi/en/airports/helsinki-airport"><strong>Helsinki-Vantaa Airport</strong></a> is another attractive alternative for long distance travel.</p>
+											<p>Direct connection from Turku to the Helsinki-Vantaa airport is available from <a href="https://www.matkahuolto.fi/en/"><strong>Matkahuolto</strong></a>, commonly departing every hour, except in the evening and night time. </p>
+											
+											<p><strong>Ships</strong></p>
+											<p>Turku offers a quick and easy ship route to Ahvenanmaa and Stockholm with two service providers <a href="https://www.tallinksilja.com/book-a-cruise"><strong>Tallink Silja</strong></a> and <a href="https://www.sales.vikingline.com/"><strong>Viking Line</strong></a>. Departures are available in the morning and in the evening.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p class= "text-center">
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#carRental" aria-expanded="false" aria-controls="carRental">Car Rental</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="carRental">
+										<div class="card card-body">
+											<p>There are various possibilities to rent a car in Turku from international and domestic service providers such as <a href="http://www.aurarent.fi/"><strong>Aurarent</strong></a> (webpages only in Finnish), <a href="https://www.avis.fi/en/"><strong>Avis</strong></a>, <a href="https://www.hertz.fi/rentacar/reservation/"><strong>Hertz</strong></a>, <a href="https://www.rentalcars.com/fi/city/fi/turku/"><strong>RentalCars</strong></a> and <a href="https://www.sixt.fi/en/"><strong>Sixt</strong></a>.
+											<p>In order to rent a car in Finland, you need a driver's licence that has been in effect minumum one year. Remember, that only the driver registered for the lease contract can drive the rented car unless otherwise stated in the contract.</p>
+											<p>The age to acquire a driver's licence in Finland is 18 years. In addition, some service providers may have age restrictions for rental cars.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-122656902-1');
+		</script>  
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="leCss.css">
+													 
+		<!-- Optional JavaScript -->
+		<script src="../progress.js"></script>
+		<script src="scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+	<header class="navbar fixed-top navbar-light bg-light">
+		<div class="container">
+			<a class="nav-item nav-link" href="index.html"><img class="svg-size" src="../img/Resources/Icons/home_white.svg" /></a>
+			<a class="nav-item nav-link" href="campusMap.html"><img class="svg-size-camp" src="../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+			<a class="nav-item nav-link" href="profile.html"><img src="../img/user-white.png" /></a>
+		</div>
+	</header>
+	<section class="container mainContainers" id="studyContainer">
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<img class="card-img-top" src="../img/Images/study.png" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title  text-center">Turun yliopisto</h5>
+						<p class="card-text">Tervetuloa opiskelijaksi Turun yliopistoon ja jäseneksi 25 000 opiskelijan ja työntekijän aktiiviseen akateemiseen yhteisöön.</p>
+						<p>My Mobile Tutor -palvelun lisäksi koko henkilökuntamme ja tutorisi ovat valmiita vastamaan kysymyksiisi ja auttamaan sinua sekä akateemisten että arkisten haasteiden kanssa. Ole utelias ja aktiivinen, niin saat kaiken irti opiskeluajastasi!</p>
+						<p>Lue lisää Turun yliopistosta nettisivuiltamme <a href="http://www.utu.fi/fi/"><strong>utu.fi</strong></a>.</p>
+						<!--<h5 class="card-title  text-center">Yliopisto-opiskelusta</h5>-->
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonUniStudies" aria-expanded="false" aria-controls="buttonUniStudies">Yliopisto-opiskelusta</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonUniStudies">
+									<div class="card card-body">
+										<p>Opiskelu yliopistossa perustuu akateemiseen vapauteen, joka samalla tuo vastuun omien opintojen suunnittelusta ja edistymisestä. Opettajat eivät automaattisesti seuraa kurssien tai opintokokonaisuuksien edistymistä. Tiedekunnilla ja jopa laitoksilla on toisistaan poikkeavia tapoja opintojen järjestämisessä ja aikatauluttamisessa.</p>
+										<p>Erityisesti aloittaville opiskelijoille on tarjolla neuvontaa, mutta hae aktiivisesti tietoa myös itse yliopiston verkkosivuilta ja oppaista sekä opiskelukavereilta ja tutoreilta. Osallistu myös oman tiedekunnan info-tapahtumiin. Tästä osiosta löydät myös muutamia yleisiä Turun yliopiston ja yliopisto-opiskelun periaatteita ja käytännön ohjeita.</p>
+										<p>Lisätietoa myös yliopiston intranetistä <a href="https://intranet.utu.fi/"><strong>intranet.utu.fi</strong></a>.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonUTUAccount" aria-expanded="false" aria-controls="buttonUTUAccount">UTU-tunnus</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonUTUAccount">
+									<div class="card card-body">
+										<p>Tarvitset UTU-tunnusta moneen eri tarkoitukseen; sähköpostin lukemiseen, opintomateriaalien ja verkko-oppimisympäristön seuraamiseen, Intranetin käyttämiseen, arvosanojen tarkastamiseen sekä kurssi- ja tentti-ilmoittautumiseen. Voit aktivoida tunnuksesi heti, kun olet rekisteröitynyt yliopiston opiskelijaksi.</p>
+										<p>Tunnuksen aktivoinnin ja myöhemmin salasanan muutokset voi tehdä verkossa suomalaisilla pankkitunnuksilla tai mobiilivarmenteella <a href="https://idm.utu.fi/"><strong>idm.utu.fi</strong></a> tai vierailemalla <a href="http://www.utu.fi/fi/yksikko/yliopistopalvelut/tietohallinto/Sivut/home.aspx"><strong>IT-palvelupisteellä</strong></a>. Kansainvälisten opiskelijoiden, joilla ei ole suomalaista hetua ja/tai pankkitunnuksia, pitää aktivointi tehdä aina henkilökohtaisesti IT-palvelupisteellä. Mukaan tarvitaan kuvallinen henkilötodistus.</p>
+										<p>Ota UTU-tunnuksesi heti aktiviseen käyttöön, sillä sitä käytetään yliopiston viestinnässä ja kaikissa opintoihin liittyvissä asioissa. Opettajien, muiden henkilökunnan jäsenten ja opiskelijoiden sähköpostit ovat yleensä muotoa etunimi.sukunimi@utu.fi tai nimen lyhenne esim. abcedf@utu.fi.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonPlanningStudies" aria-expanded="false" aria-controls="buttonPlanningStudies">Opintojen suunnittelu</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonPlanningStudies">
+									<div class="card card-body">
+										<p>Tietoa kurssitarjonnasta, niiden sisällöistä, ajankohdista ja suoritustavoista löydät  <a href="https://opas.peppi.utu.fi"><strong>opinto-oppaasta</strong></a>.</p>
+										
+    										<p>Suositeltu työmäärä yhtenä lukuvuonna on 60 opintopistettä. 1 opintopiste vastaa 27 tunnin työtä, johon kuuluu muun muassa luentoja, seminaareja, kirjojen ja artikkelien lukemista, kirjoittamista sekä yksilö- ja ryhmätyöskentelyä. Pyydä opintojen alussa apua kurssiaikataulujen suunnitteluun ja toteuttamiseen tutoriltasi, HOPS-ohjaajaltasi ja muilta opiskelijoilta.</p>
+    										<p>Suunnittele opintosi tarkkaan, jotta et ottaisi liian monta kurssia kerralla. Itsenäinen ja ryhmätyöskentely vaatii paljon aikaa, vaikka lukujärjestys vaikuttaisikin väljältä. On myös tärkeää nauttia opiskelijaelämästä vapaa-ajalla!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonCourseRegistration" aria-expanded="false" aria-controls="buttonCourseRegistration">Kursseille ilmoittautuminen</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonCourseRegistration">
+									<div class="card card-body">
+										<p>Kursseille ilmoittaudutaan yleensä <a href="https://nettiopsu.utu.fi/index?locale=fi"><strong>Nettiopsun</strong></a> kautta ennakkoon ilmoitettuina aikoina. Joissain tapauksissa kurssi-ilmoittautuminen tapahtuu kurssin ensimmäisellä luentokerralla. Kurssikohtaiset ohjeet löytyvät kurssikuvauksista <a href="https://opas.peppi.utu.fi"><strong>opinto-oppaasta</strong></a>.</p>
+										<p>Seuraa kurssi-ilmoittautumisten päivämääriä, sillä osa kursseista (etenkin kielikurssit) ovat suosittuja ja pienten ryhmäkokojen vuoksi täyttyvät nopeasti.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonWaysofStudy" aria-expanded="false" aria-controls="buttonWaysofStudy">Tapoja opiskella</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonWaysofStudy">
+									<div class="card card-body">
+										<p>Luennot eivät ole yleensä pakollisia, mutta niihin osallistumista suositellaan lämpimästi. Sen sijaan seminaareissa, harjoituksissa, labratöissä ym. on vaatimuksia osallistumiselle. Myös kielikursseilla on käytössä vaatimus 80 % läsnäololle. Yhteisten tapaamisten lisäksi on hyvä varautua itsenäiseen ja ryhmätyöskentelyyn.</p>
+										<p>On tärkeää, että osallistut kurssin ensimmäiselle tapaamiskerralle, sillä silloin käsitellään kaikki kurssiin liittyvät asiat: vaatimukset, aikataulut, suoritustavat ym. Kielikursseilla yleensä vaaditaan osallistumaan ensimmäiselle kerralle, muuten voit menettää paikkasi kurssilla. Esteen sattuessa informoi opettajaa.</p>
+										<p>Turun yliopistossa noudatetaan akateemista varttia, eli tapaamiset alkavat yleensä vartin yli. Jos luentoaika ilmoitetaan pidettäväksi klo 12–14, se tarkoittaa lähes aina ajankohtaa 12:15–13:45, eli 2 x 45 min opetustuntia. Poikkeuksia voi olla, mutta opettajat tiedottavat asiasta.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonExams" aria-expanded="false" aria-controls="buttonExams">Tentit</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonExams">
+									<div class="card card-body">
+										<p>Jos opintosuoritukseen kuuluu tentti, se pidetään yleensä kurssin lopulla ennalta merkittynä päivänä. Tenttipäivät saat tietoosi viimeistään kurssin ensimmäisellä kerralla. Tenttikysymykset vaihtelevat laajoista esseistä monivalintakysymyksiin ja yleensä opettajat kertovat tenttiin tulevista kysymystyypeistä etukäteen.</p>
+										<p>Osa tiedekunnista noudattaa tenttiviikkoja ja osassa saatetaan järjestää tenttejä keskellä jaksoa. Lisäksi tiedekunnissa on yleisiä tenttipäiviä, jolloin voi uusia tenttejä. Lähtökohtaisesti kursseilla on kolme tenttimahdollisuutta, joista voit valita itsellesi sopivimman. Arvosanaa voi myös halutessaan korottaa.</p>
+										<p>Tentteihin tulee yleensä ilmoittautua viikkoa ennen tenttiä <a href="https://tenttis.utu.fi/login/index.php?lang=fi_utf8"><strong>Nettiopsussa</strong></a>. Varmista asia kurssin sivuilta tai opettajalta, sillä käytännöt vaihtelevat.</p>
+										<p>Muista ottaa mukaan tenttitilaisuuteen opiskelijakorttisi henkilöllisyyden todistamista varten. Kortin lisäksi vain kirjoitusvälineet ovat tenttitilaisuudessa sallittuja. Seuraa aina tentinvalvojan ohjeita. Ole ajoissa ja tarkista tentin todellinen alkamisaika, esim. klo 14:00 tai 14:15. Tenteissä akateemiset vartit eivät ole välttämättä käytössä.</p>
+										<p>Osa tenteistä, erityisesti kirjatenttejä ja joitain luentotenttejä, on mahdollista suorittaa sähköisinä tentteinä siihen varatuissa tiloissa, joita on Agorassa, Publicumissa, Turun kauppakorkeakoulussa ja Teutorissa. Sähköisiä tenttejä voi suorittaa myös iltaisin ja viikonloppuisin. Valittavina olevat tentit ja ilmoittautumisohjeet löytyvät <a href="https://tenttis.utu.fi/login/"><strong>Tenttis-palvelusta</strong></a> ja <a href="https://exam.utu.fi"><strong>Exam-palvelusta</strong></a>.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonLibraries" aria-expanded="false" aria-controls="buttonLibraries">Kirjastot</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonLibraries">
+									<div class="card card-body">
+										<p><a href="http://www.utu.fi/fi/yksikot/kirjasto/Sivut/home.aspx"><strong>Turun yliopiston kirjasto</strong></a>  sijaitsee kuudessa eri toimipisteessä ympäri kampusta (<a href="http://www.utu.fi/fi/yksikot/kirjasto/kirjastot-ja-aukioloajat/Sivut/home.aspx"><strong>Kirjastot ja aukioloajat Turun kampuksella</strong></a>). Suurin osa kirjastojen palveluista on maksuttomia. Kirjojen lisäksi kirjastoissa on työtiloja, osa auki jopa 24/7. Lainaamiseen tarvitaan kirjastokortti, jonka saa maksutta henkilöllisyystodistusta vastaan kaikista toimipisteistä.</p>
+										<p><a href="https://utu.finna.fi/?lng=fi"><strong>Volter</strong></a> on aineistohakupalvelu, josta löytyvät lainattavat kirjat, artikkelit ja elektroniset materiaalit.</p>
+										<p>Muista palauttaa kirjat ajoissa! Myöhästyneistä palautuksista syntyy sakkomaksuja ja 10 euron rajan ylittyessä saa lainauskiellon, kunnes maksut on suoritettu.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonFacilities" aria-expanded="false" aria-controls="buttonFacilities">Opiskelutilat</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonFacilities">
+									<div class="card card-body">
+										<p>Yliopistolla on monenlaisia tiloja opiskeluun, joista valtaosa on kirjastojen yhteydessä. Osa tiloista on 24/7-tiloja, jotka ovat Turun yliopiston opiskelijoiden käytettävissä myös kirjaston aukioloaikojen ulkopuolella. Jos haluat käyttää 24/7-tiloja kirjaston ollessa suljettuna, tarvitset kulkulupalätkän tai siruttoman opiskelijakortin. Opiskelijan kulkuoikeus aktivoituu, kun hän ilmoittautuu läsnäolevaksi. Tutustu tiloihin tarkemmin <a href="https://www.utu.fi/fi/yksikot/kirjasto/kirjastot-ja-aukioloajat/tilat-ja-laitteet/Sivut/Ty%C3%B6skentelytilat.aspx"><strong>täällä</strong></a>.</p>
+										<p>Kirjaston ryhmätyöhuoneita voi varata utu-sähköpostin avulla (ks. <a href="https://www.utu.fi/fi/yksikot/kirjasto/lainat/varaa/Sivut/Varausj%C3%A4rjestelma.aspx"><strong>ohje</strong></a>). Jos sinulla ei ole utu-tunnuksia, voit tehdä varauksia ottamalla yhteyttä ko. kirjaston asiakaspalveluun. Ryhmätyöhuoneen voi varata kahdeksi tunniksi kerrallaan.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#UTUOnlineServ" aria-expanded="false" aria-controls="UTUOnlineServ">Yliopiston verkkopalvelut</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="UTUOnlineServ">
+									<div class="card card-body">
+										<p><strong>My mobile tutor</strong> auttaa sinua kotiutumaan opiskelukaupunkiisi Turkuun ja Turun yliopistoon tarjoamalla tietoa, tapahtumia, karttoja ja reittejä helposti ja nopeasti.</p>
+										<p><a href="https://intranet.utu.fi/"><strong>Intranet</strong></a> on yliopiston henkilökunnan ja opiskelijoiden yhteinen verkkopalvelu ja uutiskanava, josta löydät kaiken tarvitsemasi tiedon tiedekunnista, laitoksista ja kursseista sekä yliopiston palveluista, uutisista ja tapahtumista.</p>
+										<p><a href="https://moodle.utu.fi/"><strong>Moodle</strong></a> on virtuaalisen oppimisen ympäristö, jossa suurimmalla osalla kursseista on oma sivunsa. Näillä sivuilla jaetaan kurssin materiaaleja, käydään keskusteluja ja palautetaan tehtäviä. Kurssisivuille tarvitaan yleensä erillinen salasana, joka annetaan joko kurssin ensimmäisellä tapaamiskerralla tai sähköpostitse.</p>
+										<p><a href="https://nettiopsu.utu.fi/"><strong>Nettiopsu</strong></a> on virtuaalinen opintorekisteri, jonka kautta ilmoittaudutaan kursseille ja tentteihin. Palveluun rekisteröidään myös kurssien arvosanat. Lisäksi voit muokata palvelussa yhteystietojasi.</p>
+										<p><a href="https://opas.peppi.utu.fi"><strong>Opinto-opas</strong></a> sisältää koko yliopiston kurssitarjonnan ja niiden kuvaukset. Tutustu tarjontaan ja kokoa itsesi näköinen opintokokonaisuus!</p>
+										<p><a href="https://tenttis.utu.fi/login/"><strong>Tenttis</strong></a> ja <a href="https://exam.utu.fi"><strong>Exam</strong></a> ovat sähköisiä tenttipalveluita, joiden kautta voi ilmoittautua sähköisiin tentteihin niihin varatuissa tiloissa Agorassa, Publicumissa, Teutorissa ja Turun kauppakorkeakoulussa. Sähköisiä tenttejä voi suorittaa myös iltaisin ja viikonloppuisin.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>
+							<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#buttonStudentUnion" aria-expanded="false" aria-controls="buttonStudentUnion">TYY</button>
+						</p>
+						<div class="row">
+							<div class="col">
+								<div class="collapse multi-collapse" id="buttonStudentUnion">
+									<div class="card card-body">
+										<p>Turun yliopiston ylioppilaskunta <a href="https://www.tyy.fi/"><strong>TYY</strong></a> on vuonna 1922 perustettu Turun yliopiston opiskelijoiden etu- ja palvelujärjestö, johon jokainen Turun yliopiston perustutkinto-opiskelija automaattisesti kuuluu. Jäseniä TYYssä on yhteensä noin 15 000.</p>
+										<p>TYY toteuttaa edunvalvontaa koulutus-, sosiaalipoliittisissa ja kansainvälisissä asioissa sekä yliopistolla, kaupungissa että valtakunnallisella tasolla. TYY tarjoaa myös jäsenilleen opiskelija-, kulttuuri- ja liikuntapalveluita sekä järjestöilleen järjestö- ja tukipalveluita.</p>
+										<p>TYYssä toimii 144 <a href="https://www.tyy.fi/fi/node/173/"><strong>aine- ja tieteenalajärjestöä</strong></a>, <a href="https://www.tyy.fi/fi/node/338/"><strong>harrastusjärjestöä</strong></a> ja <a href="https://www.tyy.fi/fi/jarjestoille/jarjestot/osakunnat"><strong>osakuntaa</strong></a>, joista löydät varmasti itsellesi sopivaa tekemistä ja kavereita! TYYn ja alajärjestöjen tapahtumia löydät <a href="events.html">täältä</a>.</p>
+										<p>TYY auttaa opiskelijoita monissa eri asioissa, joten ota rohkeasti <a href="https://www.tyy.fi/fi/yhteystiedot"><strong>yhteyttä</strong></a> tai käy toimistolla.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../img/Resources/Icons/city_info_white_circle.svg" />
+					<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="study.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../img/Resources/Icons/study_info_black_circle_v2.svg" />
+					<figcaption class="figure-caption text-center text-light">UTU</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

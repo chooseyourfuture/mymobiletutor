@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="groceriesContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/groceries.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Ruokakaupat</h5>
+							<p>Turussa on ruokaostoksia varten useita vaihtoehtoja ja valikoimaa monipuolistavat etniset ja muut erikoiskaupat.</p>
+							<a href="../map.html?search=ruokakauppa"><button type="button" class="btn btn-dark btn-block" >Ruokakauppaan</button></a>  
+                        </div>
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#hardwareStores" aria-expanded="false" aria-controls="hardwareStores">Erikoiskaupat</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="hardwareStores">
+										<div class="card card-body">
+											<p><a href="http://www.kauppahalli.fi/"><strong>Turun Kauppahalli</strong></a> sijaitsee keskustassa, ja se on tunnelmallinen ostos- ja ruokailupaikka. Tarjontaan kuuluu leipomoita, liha-, kala- ja juustokauppiaita, kahvi-, tee- ja maustekauppoja sekä ravintoloita ja kahviloita.</p>
+											<p><a href="https://www.turku.fi/tyo-ja-yrityspalvelut/tontit-ja-toimitilat/kauppatori"><strong>Turun Kauppatori</strong></a> on keskustan ydin ja siellä on maanantaista lauantaihin erityisesti hedelmien, marjojen ja kasvisten myyjiä. Lisäksi torilta saa usein kalaa ja leipomotuotteita sekä käsitöitä.</p>
+											<p><a href="https://www.vegekauppa.fi/"><strong>Vegekauppa</strong></a> on vegaaninen päivittäistavarakauppa, jonka myymälä sijaitsee keskustassa Forumin korttelissa.</p>
+											<p><a href="https://www.ruohonjuuri.fi/ekotietoa/myymala/turku/"><strong>Ruohonjuuri</strong></a> myy muun muassa luomuruokaa, ravintolisiä ja luonnonkosmetiikkaa. Turun myymälä sijaitsee osoitteessa Eerikinkatu 17.</p>	
+											<p>Keskustassa on lisäksi useita etnisiä ruokakauppoja, etenkin kiinalaisia, thaimaalaisia ja Lähi-Idän makuja tarjoavia kauppoja. <a href="../map.html?search=Eerikinkatu 5 Turku&event=true">Eerikinkatu 5:ssä</a> sijaitsee myös erillinen halal-lihakauppa.</p>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+   <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

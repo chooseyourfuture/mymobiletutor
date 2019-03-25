@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="safetyContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/safety_AdobeStock_91945534.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Turvallisuus</h5>
+							<p>Turku on turvallinen kaupunki asua ja ulkopuolisiin harvoin kohdistuu väkivallan uhkaa. Öiseen aikaan kannattaa kuitenkin liikkua seurassa, jos se on mahdollista.</p>
+							<p>Yleinen hätänumero on <strong>112</strong>. Suosittelemme lataamaan sovelluksen <strong>‘112 Suomi’</strong>. Kaikki sovelluksen kautta tehdyt hätäpuhelut auttaa paikantamaan soittajan välittömästi.</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#police" aria-expanded="false" aria-controls="police">Poliisi</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="police">
+										<div class="card card-body">
+											<p class = "text-cener"><a href="https://www.poliisi.fi/"><strong>Poliisi</strong></a> hoitaa rikosten ennaltaehkäisyn ja selvittämisen lisäksi lupa-asioita esimerkiksi tapahtumien ja mielenosoitusten järjestämistä varten sekä myöntää henkilötodistuksia. Lupia voi anoa sähköisesti tai poliisilaitoksella.
+											</p>
+											<p><strong>Lounais-Suomen poliisilaitos</strong><br/>
+											<a href="../map.html?search=Eerikinkatu 40-42 Turku&event=true">Eerikinkatu 40-42</a><br/>
+											02 95 440 501<br/>
+											ma-pe 08.00-17.00<br/>
+											la 08.00-15.00<br/>
+										    </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#crime" aria-expanded="false" aria-controls="crime">Rikollisuus</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="crime">
+										<div class="card card-body">
+											<p class = "text-cener">Ulkopuolisiin kohdistuu Suomessa harvoin väkivallan uhkaa, korkeintaan öiseen aikaan riski hieman kasvaa. Turussa tyypillisimmät rikokset ovat polkupyörävarkauksia, joita tapahtuu valitettavan usein niin pyörävarastoista kuin pyöräparkeistakin. Myös huijaukset esimerkiksi nettikirpputoreilla ovat lisääntyneet viime vuosina.</p>
+											<p>Pienten rikosten kohdalla helpointa on raportoida niistä sähköisellä rikosilmoituksella, jonka käyttöön tarvitaan ainoastaan pankkitunnukset tai mobiilivarmenne. Vakavien rikosten tai onnettomuuksien kohdalla soita aina numeroon 112.</p>
+											<p>Sähköisen rikosilmoituksen voi jättää <a href="http://www.poliisi.fi/rikokset/sahkoinen_rikosilmoitus"><strong>täällä</strong></a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#trafficSafety" aria-expanded="false" aria-controls="trafficSafety">Liikenneturvallisuus</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="trafficSafety">
+										<div class="card card-body">
+											<p class = "text-cener">Liikenneturvallisuus on Suomessa melko hyvällä tasolla, tosin satunnaiset päihtyneet tai muuten piittaamattomat kuskit saattavat vaarantaa liikennettä. Turvavöiden käyttäminen on autoissa ja busseissa pakollista, samoin kypärän käyttäminen moottoripyörällä ja kevyemmillä moottoriajoneuvoilla ajettaessa.</p>
+											<p>Pyöräillessä kypärän käyttäminen ei ole pakollista, mutta suositeltavaa. Sen sijaa pimeällä pyöräiltäessä lamppu on pakollinen ja poliisi valvoo asiaa säännöllisesti. Myös heijastimen käyttö on erittäin suositeltavaa pimeällä.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#multiculturalIssues" aria-expanded="false" aria-controls="multiculturalIssues">Monikulttuurisuus</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="multiculturalIssues">
+										<div class="card card-body">
+											<p class = "text-cener">Noin 10 % Suomen väestöstä on maahanmuuttajia, joista valtaosa asuu kaupungeissa. Valitettavasti rasismi ja vihapuhe ovat viime vuosina lisääntyneet muun muassa haasteellisen taloustilanteen, työttömyyden ja lisääntyneiden turvapaikkahakemusten myötä.</p>
+											<p>Turku on melko monikulttuurinen kaupunki, sillä se on ottanut vastaan paljon pakolaisia ja se on kolmen yliopiston muodostama kansainvälinen opiskelun keskus. Näin ollen turkulaiset yleensä hyväksyvät erilaisuutta hyvin, mutta rasismia saattaa siti ilmetä. Yleensä ulkomaalaistaustaiset miehet kokevat enemmän vastustusta kuin naiset.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#environmentalHazards" aria-expanded="false" aria-controls="environmentalHazards">Ympäristövaarat</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="environmentalHazards">
+										<div class="card card-body">
+											<p class = "text-cener">Suomi on tunnetusti turvallinen maa myös luonnonvoimien suhteen. Silloin tällöin myös Suomea koettelevat myrskyt, jotka saattavat haitata sähkönsaantia ja liikennettä. Myös kovat pakkaset saattavat aiheuttaa haasteita. Turvallisuusviranomaiset suosittelevat kaikkia varautumaan niin, että pärjäävät tarvittaessa 48 tuntia ilman vettä ja sähköä.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="healthContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/health_AdobeStock_124602758.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Health</h5>
+							<p>Healthcare has high quality in Finland. All permanent residents in Finland can use public healthcare with low price. EU, Iceland, Norway, Switzerland and Liechtenstein citizens can use public services with European Health Insurance Card.</p>
+							<p>People coming from other countries can use private healthcare by paying the service fees or using travel insurance. Private health care is expensive without insurance. In emergency situation you will be taken care of in the hospital, but the costs can be collected from you afterwards.</p>
+							<p>Students can use student healthcare services, if you have paid the fee while registration (See <b>Student healthcare</b> for more information).</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#emergency" aria-expanded="false" aria-controls="emergency">Emergency</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="emergency">
+										<div class="card card-body">
+											<p>In life-threatening situations use an emergency number 112. There is also a free app available called ‘112 Suomi’, which helps to locate you faster and accurately when in need. In urgent situations you can call to hospital’s own emergency number for further guidance. In Turku area, the number is 02 313 8800.</p>
+											<p><strong>TYKS, T-Hospital</strong><br/>
+											<a href="../map.html?search=Savitehtaankatu 1 Turku&event=true">Savitehtaankatu 1</a><br/>
+											02 313 8800<br/>
+											Open 24/7</p>
+											</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#publicHealth" aria-expanded="false" aria-controls="publicHealth">Public Healthcare</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="publicHealth">
+										<div class="card card-body">
+											<p>There are two types of public healthcare: primary healthcare is provided by municipal health centers (terveysasemat), and specialized medical care provided by district hospitals (sairaalat).</p>
+											<p>If you are eligible to use public healthcare, after registering your address you will be automatically registered to a health center close to you. You can only make appointments to that specific health center. If it is not urgent illness, the waiting period can be long for public centers, even months. Urgent illnesses and accidents are of course handled quickly.</p>
+											<p><strong><a href="http://www.turku.fi/en/health-and-social-services/health-services/services-health-centres">Health centers in Turku</a></strong></p>
+											<a href="../map.html?search=Terveyskeskus near Turku"><button type="button" class="btn btn-dark btn-block" >Doctors on a Map</button></a>  </div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#privateHealthcare" aria-expanded="false" aria-controls="privateHealthcare">Private Healthcare</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="privateHealthcare">
+										<div class="card card-body">
+											<p>You can use your travel/healthcare insurance or pay the private healthcare services by yourself. The services cover almost everything from basic care to surgeries and it is fast to get in. For basic care the fee is around 60-80 euros/20 min. In Turku area there are many service providers for both health and dental care (e.g. <a href="https://www.mehilainen.fi/en"><strong>Mehiläinen</strong></a>, <a href="https://www.terveystalo.com/en/"><strong>Terveystalo</strong></a>).</p>
+											<a href="../map.html?search=doctors near Turku"><button type="button" class="btn btn-dark btn-block" >Doctors on a Map</button></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#studentHealthcare" aria-expanded="false" aria-controls="studentHealthcare">Student Healthcare</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="studentHealthcare">
+										<div class="card card-body">
+											<p>You can use FSHS (Finnish Student Health Service, YTHS in Finnish) if you are studying at degree program or having an exchange period at the University of Turku and have paid student union membership fee. The fee per student is currently €54 and it is paid in conjunction with the student union membership fee.</p>
+											<p>FSHS provides general, mental and oral healthcare. Most of the services are free of charge, only special care has small fees. NOTE! Remember to cancel your appointment! The penalty fee for no-show is €35.</p>
+											<p><strong>FSHS Turku</strong>
+											<a href="../map.html?search=Kirkkotie 13 Turku&event=true">Kirkkotie 13</a>
+											046 710 1050 (booking appointments)<br/>
+											Mon-Thu 08.00-15.00<br/>
+											Fri 08.00-14.00</p>
+											<p><a href="http://www.yths.fi/en/contact_details/units/turku">More information of FSHS</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#pharmacies" aria-expanded="false" aria-controls="pharmacies">Pharmacies</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="pharmacies">
+										<div class="card card-body">
+											<p>Medication (both prescribed and non-prescribed) in Finland is only available in pharmacies (Apteekki). Pharmacies are usually open during normal business hours. In Turku city center, Yliopiston Apteekki (<a href="../map.html?search=Yliopistonkatu 25 Turku&event=true">Yliopistonkatu 25</a>) is open daily 07.00-23.00 for urgent needs.</p>
+											<a href="../map.html?search=apteekki near Turku"><button type="button" class="btn btn-dark btn-block" >Locations of Pharmacies</button></a>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"><div id="leMap"></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+  </body>
+  <script src="../scripts/lists.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+</html>

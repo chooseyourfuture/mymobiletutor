@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="shoppingContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/shopping 2.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Shopping</h5>
+							<p>There are various shopping possibilities in Turku. In addition to couple of malls and department stores, there are more and more unique boutiques and second hand stores throughtout the city. You may also find interesting pop-up stores and fairs all year round. </p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#malls" aria-expanded="false" aria-controls="malls">Malls</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="malls">
+										<div class="card card-body">
+											<p><strong><a href="https://hansakortteli.fi/in-english/">Hansakortteli</a></strong> is a mall located in the main square of Turku where you can find a large variety of clothing and other stores including sports and electronics housing a total over 150 businesses. The mall also has a generous food court.</p>
+											<p><strong><a href="http://forumkortteli.fi/in-english/">Forum Kortteli</a></strong> is a shopping center located in the heart of Turku, right across the street from the Kauppatori marketplace. There are many small service providers and retailers and there are often interesting pop-up stores from Finnish designers.</p>
+											<p><a href="http://www.kop-kolmio.fi/"><strong>KOP-kolmio</strong></a> is a small shopping center located in the heart of city, next to Market Hall (Kauppahalli). (Internet pages only in Finnish.)</p>
+											<p><strong><a href="https://www.skanssi.fi/en/node/69">Skanssi</a></strong> is a mall 5 km from Turku housing a total of 90 businesses ranging from clothing to cafés and grocery stores.</p>
+											<p><strong><a href="http://www.kauppakeskusmylly.fi/en/">Mylly</a></strong> is another big mall about 9 km from Turku hosting more than 150 businesses from grocieries and fashion to different services (e.g. hairdresser and pharmacies) and restaurants.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#departmentStores" aria-expanded="false" aria-controls="departmentStores">Department Stores</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="departmentStores">
+										<div class="card card-body">
+											<p><strong><a href="https://info.stockmann.com/info/tavaratalot/turku/">Stockmann</a></strong> (webpages only in Finnish) is a large department store located in the Hansa shopping center. Stockmann offers a large range of products from cosmetics and fashion to interior decoration and a well-stocked grocery store.</p>
+											<p><strong><a href="https://www.sokos.fi/fi/sokos/myymalat/sokos-wiklund-turku">Sokos Wiklund</a></strong> (webpages only in Finnish) is a large department store across the main square from Hansa. Wiklund offers a large range of cosmetics and fashion goods.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#hardwareStores" aria-expanded="false" aria-controls="hardwareStores">Home Supplies</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="hardwareStores">
+										<div class="card card-body">
+											<p><strong><a href="http://www.ikea.com/fi/fi/store/raisio">Ikea</a></strong> is a good place to find affordable furniture and design elements. There is an Ikea store located near Turku in Raisio a bus trip away. The following bus connections arrive nearby: 2, 302, 303, 220, 221, 300.</p>
+											<p><strong><a href="https://www.clasohlson.com/fi/">Clas Ohlson</a></strong> (webpages only in Finnish) is a hardware store with location in the center of Turku. It is convenient for your daily hardware needs.</p>	
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#secondhandStores" aria-expanded="false" aria-controls="secondhandStores">Second Hand Stores</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="secondhandStores">
+										<div class="card card-body">
+											<p><strong>Clothes and household goods</strong></p>
+											<p>Unfortunately almost all webpages are only in Finnish.</p>
+											<p><strong><a href="http://www.kirppiscenter.fi/">KirppisCenter</a></strong> offers two biggest second hand malls (Manhattan and Länsikeskus) in Turku, both few kilometers from the city center. These venues offer a possibility to bring your own clothes and other goods for sale or find something for yourself.</p>
+											<p><strong><a href="http://www.tsemppi.net/kirppis.html">Laiskan kirppis</a></strong> is located at <a href="../map.html?search=Vanha Hämeentie 29 Turku&event=true">Vanha Hämeentie 29</a> and has mostly clothes and other smaller goods. It has the lowest price in Turku to sell your own extra goods.</p>
+											<p><strong><a href="http://olganeiti.kotisivuni.org/">Olga-Neiti</a></strong> is a second hand store specialized for clothes just in the city center in <a href="../map.html?search=Yliopistonkatu 15 g Turku&event=true">Yliopistonkatu 15 G</a>.</p>
+											<p><strong><a href="https://www.pelastusarmeija.fi/kirpputori">Pelastusarmeija</a></strong> (Salvation Army) offers few different locations for their flee markets in Turku. By buying from them, you support people in need. You can donate goods for sale or find something for yourself.</p>
+											<p><strong><a href="https://www.puutorinkirppis.fi/">Puutorin kirppis</a></strong> is a new and modern second hand store in <a href="../map.html?search=Brahenkatu 14 Turku&event=true">Brahenkatu 14</a>. You can find mostly clothes and small household goods or you can bring your own goods for sale.</p>
+											<p><strong><a href="http://uff.fi/in-english/">UFF Turku</a></strong> has extensive collection of second hand clothes and is situated in the city center in <a href="../map.html?search=Humalistonkatu 5 Turku&event=true">Humalistonkatu 5</a>.</p>
+											<p><strong>Furniture and other larger goods</strong></p>
+											<p><strong><a href="http://turunekotori.fi/in-english/">Ekotori</a></strong> is a Turku-based non-profit organization whose mission is to create pro-environmental awareness and facilitate recycling. They have two locations within the city (<a href="../map.html?search=Rautakatu 12 Turku&event=true">Rautakatu 12</a> and <a href="../map.html?search=Rieskalähteentie 74 Turku&event=true">Rieskalähteentie 74</a>), where you can find furniture, bicycles, electronics etc. You can donate your extra goods for them to re-sell.</p>
+											<p><strong><a href="https://kontti.redcross.fi/">Kontti</a></strong> sells many kinds of goods and it has good selection of furniture. They also pick-up furniture for sale or deliver the ones you’ve bought. It is located in <a href="../map.html?search=Satakunnantie 105 Turku&event=true">Satakunnantie 105</a>. They use majority of their profit for charity.</p>
+											<p><strong><a href="https://www.tori.fi/">Tori.fi</a></strong> is a huge digital market place for second hand goods and a great place to sell and find necessities from clothes to bicycles and from electronics to rental houses.</p>
+											<p>In addition there are various pop-up events for second hand goods such as <strong><a href="http://www.kareninkirppis.com/">Kårenin kirppis</a></strong>,<strong><a href="https://www.facebook.com/events/286511388539816/"> Monthly flea market</a></strong> at Book Café and <strong><a href="http://siivouspaiva.com/en/cleaningday">Siivouspäivä</a></strong> (Cleaning Day), which is a new day of celebration for friends of flea markets and recycling. Anyone can offer their second hand items up for sale on the streets, yards and at home, as well as make the best finds few times a year.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

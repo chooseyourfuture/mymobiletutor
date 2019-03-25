@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+ <head>  
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="publicHolidaysContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/culture_holidays.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Juhlapäivät</h5>
+							<p>Suomessa on 10 kirkollista ja kaksi muuta kansallista juhlapäivää, jotka ovat vapaapäiviä. Tällöin erityisesti julkisten palveluiden aikataulussa ja liikenteessä on voimassa erikoisaikatauluja, jotka kannattaa tarkistaa ennalta. Yliopistolla ei järjestetä opetusta juhlapäivinä. Kaupat saavat itse määrittää aukioloaikansa ja ainakin keskustan alueella on kauppoja ja ravintoloita, jotka ovat usein pyhinäkin auki.</p>
+							<p>Nykyään Suomessa vietetään hieman vieraampiakin juhlia etenkin ulkomaalaisten ystävien seurassa ja kannattaakin ehdottomasti liittyä joukkoon. Esimerkiksi kiinalaisen uuden vuoden, Eid al-Fitrin, halloweenin ja kiitospäivän juhlia järjestetään myös Turussa. Tutummista juhlista laskiainen ja ystävänpäivä eivät vaikuta opetukseen, mutta näkyvät muuten opiskelijoiden elämässä erilaisina tapahtumina.</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#timetable" aria-expanded="false" aria-controls="timetable">Aikataulu</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="timetable">
+										<div class="card card-body">
+											<p>Tammikuu: uudenvuodenpäivä (1.1.), loppiainen (6.1.)<br />
+											Helmikuu: laskiaistiistai (7 viikkoa ennen pääsiäistä), ystävänpäivä (14.2.)<br />
+											Maaliskuu: pääsiäinen maalis- tai huhtikuussa<br />
+											Huhtikuu: pääsiäinen maalis- tai huhtikuussa<br />
+											Toukokuu: vappu (1.5.), äitienpäivä (toukokuun toinen sunnuntai), helatorstai (tyypillisesti toukokuun lopussa)<br />
+											Kesäkuu: helluntai (10 päivää helatorstaista), juhannus (kesäkuun toiseksi viimeinen viikonloppu)<br />
+											Heinäkuu: -<br />
+											Elokuu: -<br />
+											Syyskuu: -<br />
+											Lokakuu: pyhäinpäivä (loka- ja marraskuun taitteeseen osuva lauantai)<br />
+											Marraskuu: isänpäivä (marraskuun toinen sunnuntai)<br />
+											Joulukuu: itsenäisyyspäivä (6.12.), Lucian päivä) (13.12.), joulu (24.-26.12.), uudenvuodenaatto (31.12.)
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#epiphany" aria-expanded="false" aria-controls="epiphany">Laskiainen</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="epiphany">
+										<div class="card card-body">
+											<p>Laskiainen ei ole virallinen juhlapäivä, mutta perinteisesti opiskelijat viettävät laskiaista näyttävästi. Laskiaistiistain päivämäärä vaihtelee, mutta sijoittuu kalenterissa yleensä helmikuun puoleenväliin.</p>
+											<p>Laskiaistiistaina on usein monipuolista ohjelmaa ja turkulaisten opiskelijoiden laskiaisrieha järjestetään iltapäivällä Vartiovuorenmäellä. Tapahtuman organisoivat alueen eri korkeakoulujen opiskelijakunnat ja päivään kuuluu mäenlaskua, tarjoiluja, musiikkia, yhdessäoloa sekä kilpailuja opiskelijakuntien kesken. Tapahtumassa on esillä myös monet opiskelijayhdistykset, joista voi löytää itseään kiinnostavaa tekemistä. Päivän päättää laskiaisillan bileet.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#easter" aria-expanded="false" aria-controls="easter">Pääsiäinen</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="easter">
+										<div class="card card-body">
+											<p>Pääsiäinen on joulun ohella kirkkovuoden tärkein juhla ja sijoittuu kalenterissa maalis- tai huhtikuulle. Pääsiäisen juhlapyhistä pitkäperjantai ja toinen pääsiäispäivä ovat vapaapäiviä myös yliopistolla. Viikkoa ennen pääsiäistä, palmusunnuntaina, saattaa opiskelija-asuntojenkin ovelle eksyä virpojia.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#mayday" aria-expanded="false" aria-controls="mayday">Vappu</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="mayday">
+										<div class="card card-body">
+											<p>Vappu on opiskelijoiden tärkein juhla. Virallisesti vain 1.5. oleva vappupäivä on vapaapäivä, mutta varsinainen juhlinta tapahtuu yleensä edellisenä päivänä ja osa opiskelijoista viettää kokonaista vappuviikkoa. Eri aineiden opiskelijoilla on omia vappuperinteitä, eli kannattaa seurata omien ainejärjestöjen viestintää.</p>
+											<p>Turussa vappua vietetään näyttävästi ja vappuaaton päätapahtuma on opiskelijoiden järjestämä. Vappuaatto alkaa perinteisellä lakitustilaisuudella Taidemuseonmäellä kello 17:30 ja valkolakit painetaan päähän kello 18:00 TYYn hallituksen puheenjohtajan pitämän vappupuheen päätteeksi. Tuhansien ihmisten lakitus ja kuohuvien poksauttelu Taidemuseonmäellä on vapun ehdoton kohokohta, jota ei kannata jättää väliin!</p>
+											<p>Lakituksen jälkeen opiskelijoiden lippukulkue jatkaa matkaansa Auransillan kupeeseen Runeberginpuistoon, missä seuraa Liljan patsaan pesu ja lakitus kello 18:30 alkaen. Tämän jälkeen juhlinta jatkuu usein Vartiovuorenmäellä tai ympäri kaupunkia.</p>
+											<p>Vappupäivänä on (kelistä riippumatta) koko kaupungin vappupiknik Vartiovuorenmäellä. Piknikillä on tunnelmallista musiikkia, hauskaa ohjelmaa ja keväistä vapputunnelmaa. Kaveriporukalla on mukava koota maistuva piknik-tarjoilu kasaan.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#midsummer" aria-expanded="false" aria-controls="midsummer">Juhannus</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="midsummer">
+										<div class="card card-body">
+											<p>Juhannus sijoittuu kalenterissa kesäpäivänseisauksen lähellä olevaan viikonloppuun (useimmiten 19.-26.6. välille).</p>
+											<p>Juhannuksena ei ole varsinaista ohjelmaa opiskelijoille, eli kannattaa olla itse aktiivinen juhannusjuhlien järjestäjä ja kutsua myös kansainvälisiä opiskelukavereita mukaan. Turun alueella poltetaan sään salliessa kokkoja ja erityisesti ruotsinkielisten juhannukseen kuuluu juhannussalkojen pystyttäminen.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#christmas" aria-expanded="false" aria-controls="christmas">Joulu</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="christmas">
+										<div class="card card-body">
+											<p>Joulu on tärkeää aikaa valtaosalle suomalaisista. Varsinaisen kristillisen tarkoituksensa lisäksi joulu on antamisen, läheisten muistamisen ja rentoutumisen aikaa.</p>
+											<p>Turku on <a href="https://www.turku.fi/joulu"><strong>Suomen joulukaupunki</strong></a> ja kaupungissa järjestetään sekä <a href="https://suurtorinjoulumarkkinat.fi/"><strong>Vanhan Suurtorin perinteiset Joulumarkkinat</strong></a> että useampia pienempiä markkinoita erilaisilla teemoilla. Tarjolla on myös monia konsertteja, työpajoja ja muuta mukavaa tekemistä pitkin joulukuuta. <a href="https://www.turku.fi/joulukaupunki/joulurauha"><strong>Joulurauhan julistus</strong></a> Turun suurtorilla aloittaa joulun ja tuhansien ihmisten kokoontuminen joulun aloitukseen on monille päivän tärkein hetki.</p>
+											<p>Yliopistolla joulunaika näkyy monin tavoin, sillä aine- ja muut opiskelijajärjestöt järjestävät pikkujouluja ja muita hauskoja tapahtumia. Lisäksi monet opiskelijaravintolat tarjoavat joululounasta ja muita herkkuja pitkin joulukuuta.</p>
+											<p>Viimeiset tentit on aikataulutettu viimeistään viikkoa ennen joulua, ellet itse varaa sähköistä tenttiä esimerkiksi jouluaattoaamuksi (kyllä, näin on tapahtunut). Opinnot jatkuvat yleensä loppiaisen jälkeen alkavalla viikolla, mutta tämä vaihtelee oppiaineittain.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+ <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"></div><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+  </body>
+<script src="../scripts/lists.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+</html>

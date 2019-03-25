@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="outdoorsContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/outdoors 4.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Outdoors</h5>
+							<p>Nature is highly appreciated in Finland. During winter time people like to go skiing, downhill skiing, skating and ice fishing. During summer camping, hiking, cycling, swimming, fishing and berry picking are popular free time activities. Many Finnish families have summer cottages away from the city to enjoy the silence and nature.
+							
+							<p>In Finland people have the right to temporarily camp on another’s land and utilise natural products such as picking berries and mushrooms without the consent of the landowner. This is called 'Everyman's rights' (Jokamiehenoikeudet). Get to know more about your rights and responsibilities concerning the nature <a href="https://helda.helsinki.fi/bitstream/handle/10138/159060/SY_5en_2015.pdf?sequence=1"><strong>here</strong></a>.
+							
+							<p>Ice fishing and fishing with worm-fishing rod are allowed almost everywhere, yet other fishing requires to buy a permit. Fishing and other wildlife permits can be bought from <a href="https://www.eraluvat.fi/en/contact-us.html"><strong>Eräluvat service</strong></a>.</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#parks" aria-expanded="false" aria-controls="parks">Parks</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="parks">
+										<div class="card card-body">
+											<p class = "text-cener"><a href="http://www.turku.fi/en/culture-and-sports/recreation/parks/sports-park"><strong>Sports Park</strong></a> (Urheilupuisto) is an urban park that combines sports and exercise activities, and where the fields and courts of various sports have been situated in a parklike and nowadays even forestlike environment. In the centre of the Sports Park there is the Paavo Nurmi Stadium. A jogging track circles the area. The Sports Park has two playgrounds and several historical buildings.</p>
+											<p><a href="http://www.turku.fi/en/culture-and-sports/recreation/parks/linnanpuisto-castle-park"><strong>Castle Park</strong></a> (Linnanpuisto) is the park area that surrounds the historical Turku castle.</p>
+											<p><a href="http://www.turku.fi/en/culture-and-sports/recreation/parks/vartiovuorenpuisto-vartiovuori-park"><strong>Vartiovuori park</strong></a> is a popular place in summer to have a picnic, do outdoor exercise, or play games right in the city centre.</p>
+											<p><a href="http://www.turku.fi/en/culture-and-sports/recreation/parks/puolalanpuisto-puolala-park"><strong>Puolala Park</strong></a> is one of the most significant constructed environments in Turku City Centre. The architecture and scenery around the park is beautiful. The Puolala Park is situated on a hill only a hundred meters away from the Turku market square.</p>
+											<p><a href="http://www.turku.fi/en/culture-and-sports/recreation/parks/kupittanpuisto-kupittaa-park"><strong>Kupittaa Park</strong></a> is the largest urban park in Finland, and it is full of different kind of activities. There are a lot of activities, but big green areas as well. There is also a bird park and a childrens traffic park. Kupittaa Park includes the Veritas football stadium, the adventure park, a restaurant, and outdoor swimming arena and the Kupittaa Sports Hall with a lot of sports facilities as well.</p>
+											<p><a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/puistot/samppalinnanpuisto"><strong>Samppalinna park</strong></a> (webpages only in Finnish) is known for it’s outdoors swimming pool and wonderful views over the city, especially from the place of the Petrelius statue. In addition, it is right near the restaurant ships on the river Aura.</p>
+											<p>Check out <a href="http://www.turku.fi/en/culture-and-sports/recreation/parks"><strong>all parks</strong></a> in Turku area.</p>
+
+							           <a href="../map.html?search=puisto"><button type="button" class="btn btn-dark btn-block">To the Park!</button></a>
+							           
+										</div>
+									</div>
+								</div>
+							</div>
+								
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#pathsCyclingRoutes" aria-expanded="false" aria-controls="pathsCyclingRoutes">Paths and Trails</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="pathsCyclingRoutes">
+										<div class="card card-body">
+											<p>You can find different kind of trails suitable for cycling, jogging or just walking from <a href="http://www.turku.fi/en/culture-and-sports/recreation/trails-routes-and-ski-tracks"><strong>Turku website</strong></a>. Trails are usually lightened during 6am to 22pm. Some of the trails around the banks of the River Aura have culture or nature themes.<br/>
+											<p>There are <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/outdoor-sports-facilities/outdoor-gym-devices"><strong>outdoor gym devices</strong></a> within the fitness and jogging trails around Turku area. For example at Kupittaa Park and Sports Park you will find different kind of outdoor gym devices that can be used by everyone.</p>
+											
+										<a href="../map.html?search=kuntorata"><button type="button" class="btn btn-dark btn-block">Go jogging!</button></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+								
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#nature" aria-expanded="false" aria-controls="nature">Nature Reserves</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="nature">
+										<div class="card card-body">
+											<p>There are different <a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/luonnonsuojelualueet"><strong>nature reserves</strong></a> (luonnonsuojelualue) in Turku City area. These areas are very versatile and offer a lot of beautiful Finnish nature scenery.
+											<p><a href="http://www.kuhankuono.fi/en/start/"><strong> Kuhankuono</strong></a> area stretches over several municipalities and has many nature trails and beautiful hiking routes. The hiking routes of Kuhankuono are located approximately 35 km north of Turku City Centre.
+											<p><a href="https://www.turku.fi/en/culture-and-sports/recreation/outdoor-recreation-islands"><strong>Turku Archipelago</strong></a> is considered as one of the most beautiful places around the earth. You can travel around the archipelago by cruises that start from the Turku city cente or by bike if you’re a fitness enthusiast.<br/>One of the closest islands and easiest to get to is Vepsä island. It is an island in Airisto, with a wonderful setting for a day trip. You can get to Vepsä with a <a href="http://www.rosita.fi/Vepsa"><strong>water bus</strong></a> from the shore of the River Aura.</p>
+											<p>Also get to know The Archipelago Trail <a href="http://www.saaristonrengastie.fi/en"><strong>Saariston Rengastie</strong></a>, which has been chosen as a best Finnish destination.</p>
+											
+										<a href="../map.html?search=luonnonsuojelualue"><button type="button" class="btn btn-dark btn-block">To the Nature!</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#beaches" aria-expanded="false" aria-controls="beaches">Beaches</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="beaches">
+										<div class="card card-body">
+											<p class = "text-cener">You can see all the beaches nearby from City of Turku <a href="http://www.turku.fi/en/culture-and-sports/sports/sports-facilities/swimming-places-and-water-sport/beaches"><strong>webpages</strong></a>. There are a few by the sea and also a few fresh water beaches. You can reach all these beaches by bus or bike from Turku city centre.</p>
+											<p>If you prefer something exotic, try <a href="http://www.visitturku.fi/en/saaronniemi-ice-swimming_en"><strong>winter swimming</strong></a> e.g. in Saaronniemi, Ruissalo.</p>
+											
+										<a href="../map.html?search=Beaches Near Turku, Finland"><button type="button" class="btn btn-dark btn-block">To the Beach!</button></a>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+ <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+  </body>
+  
+  <script src="../scripts/lists.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+  
+</html>

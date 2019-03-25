@@ -1,0 +1,11 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^studentmobileapp\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.studentmobileapp\.com$
+RewriteRule ^/?$ "https\:\/\/studentmobileapp\.com\/utu\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^studentmobileapp\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.studentmobileapp\.com$
+RewriteRule ^app\/?$ "https\:\/\/chooseyourfuture\.fi\/studentmobileapp\.com\/app\/login\/" [R=301,L]
+

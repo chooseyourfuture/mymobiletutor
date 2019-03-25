@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="housingContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/accomodation_AdobeStock_63180709.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Housing</h5>
+							<p>There are various ways to find an apartment either by using services targeted for students (TYS and Retrodorm) or from the private markets. You might be entitled to housing supplement, please find more <strong><a href="http://www.kela.fi/web/en/financial-aid-for-students">information here</a></strong>.</p>
+							<p>Paying rent on time is extremely important. Late rent payments can lead to problems with one’s landlord very quickly, leading at worst to interest payments or even eviction. You should also take good care of the apartment because unless the apartment is returned in the condition when you moved in you may be liable for losing your deposit.</p>
+							<p>Therefore, home insurance is highly recommended even if it is not required. Otherwise in the event of accidental damage you will be found fully liable. Having proper home insurance will protect you from this as they cover most events excluding deliberate destruction of property.</p>
+							<p>Recycling is common in Finland and block of flats most often have different containers for glass, metal, paper, bio and mixed waste. Please recycle as it reduces waste management costs and is good for the environment. Extensive guide on recycling can be found <strong><a href="https://www.lsjh.fi/en/advice-on-waste/waste-search/?show=all">here</a></strong>.</p>
+							<p>Many apartment blocks have common areas for laundry, which can be booked in advance. Some apartments have place for a washing machine, but tenant must usually buy it by themselves. It is not common to use laundry service in Finland as they are quite expensive. It is also rare to have self-service laundry in the city.</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#students" aria-expanded="false" aria-controls="students">Students</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="students">
+										<div class="card card-body">
+											<p><strong><a href="https://www.tys.fi/en/">TYS</a></strong> (Turun Ylioppilaskyläsäätiö) offers affordable accommodation to students in the student village but also in various locations across Turku.</p>
+											<p><strong><a href="http://www.retrodorm.fi/">Retrodorm</a></strong> run by the city of Turku is a great alternative to TYS for exchange students.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#private" aria-expanded="false" aria-controls="private">Private</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="private">
+										<div class="card card-body">
+											<p>If accommodation is not available through either TYS or Retrodorm there are various private alternatives.</p>
+											<p><strong><a href="https://lumo.fi/en/">Lumo – VVO</a></strong> offers housing services throughout Finland in their buildings.</p>
+											<p><strong><a href="https://www.vuokraovi.com/?locale=en">Vuokraovi</a></strong> is a third-party service through which individuals can post apartments for rent.</p>
+											<p><a href="https://asunnot.oikotie.fi/vuokrattavat-asunnot"><strong>Oikotie</strong></a> (webpages only in Finnish) is a third-party service through which individuals can post apartments for rent and sale.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class= "text-center">
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#movingServices" aria-expanded="false" aria-controls="movingServices">Moving Services</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="movingServices">
+										<div class="card card-body">
+											<p>Moving can be quite a hassle especially when moving to a new city. Therefore, using a professional moving service can free time and ease the process.</p>
+											<p><strong><a href="https://www.niemi.fi/en">Niemi</a></strong> is the leading moving and logistics company in Finland.<br/>Phone number: <br/>020 554 554</p>
+											<p><strong><a href="https://www.victorek.fi/en/">Victor Ek</a></strong> is one of the most experienced moving services in the country with over 130 years of experience.<br/>Phone number: <br/>09 125 11</p>
+											<p><strong><a href="https://www.opiskelijamuutot.fi/en/">Opiskelijamuutot.fi</a></strong> is a cheaper alternative to some of the larger moving companies with students in mind.<br/>Phone number: <br/>010 567 0280</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+</html>

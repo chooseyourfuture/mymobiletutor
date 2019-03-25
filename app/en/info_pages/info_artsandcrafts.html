@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-122656902-1');
+		</script>  
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="artsAndCraftsContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/art craft 3.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Arts & Crafts</h5>
+							<p>In Turku there are plenty of possibilities to learn arts and crafts and to attend courses of photography, drawing or writing. Just pick the hobby you enjoy most!</p>
+							<p>Unfortunately the websites below are only available in Finnish, but you can get contact details from their pages (yhteystiedot) and contact the personnel for mor information.</p>
+							<p><a href="http://www.turunkuvataidekoulu.fi/v4/page.php?page=ktk_esittely"><strong>Turun kuvataidekoulu</strong></a> offers many kinds of art and craft courses for all.</p>
+							<p>Also <a href="http://www.kuvataidekeskus.fi/"><strong>Manillan kuvataidekeskus</strong></a> organizes art courses for all interested in arts.</p>
+							<p><a href="http://www.aurala.fi/"><strong>Setlementti Aurala</strong></a> is an adult education center that offers courses related to arts, crafts, photography and creative expression.</p>
+							<p><a href="https://www.paasikiviopisto.fi/"><strong>Paasikivi-opisto</strong></a> institute offers courses related to photography, drawing and creative writing etc.</p>
+							<p><a href="http://www.turunsunnuntaimaalarit.net/"><strong>Turun Sunnuntaimaalarit</strong></a> association offers many kinds of art courses, located at Barkerin Ateljeet building.</p>
+							<p>At <a href="https://www.turku.fi/vimma"><strong>Vimma</strong></a>, you can come and do crafts, music and media, participate in events, or just visit to feel the vibes.</p>
+							<p><a href="http://www.taitovarsinaissuomi.fi/turku/"><strong>Turun Taitokeskus</strong></a> organizes craft courses.</p>
+							<p><a href="http://www.tslturku.fi/"><strong>Työväen Sivistysliiton Turun opintojärjestö ry</strong></a> organizes different kind of courses and cultural events open to all.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">City</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+  </body>
+  <script src="../scripts/lists.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+</html>

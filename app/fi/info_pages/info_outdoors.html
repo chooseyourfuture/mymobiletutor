@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="outdoorsContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/outdoors 4.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Ulkoileminen</h5>
+							<p>Turussa ja lähialuille voi nauttia luonnonläheisyydestä niin puistoissa, luontopoluilla kuin rannoillakin. Tutustu <a href="http://www.ymparisto.fi/fi-FI/Luonto/Jokamiehenoikeudet(16989)"><strong>jokamiehenoikeuksiin</strong></a> ennen retkeilyä luonnossa. 
+							</p>
+							<p>Onkiminen ja pilkkiminen on sallittua lähes kaikkialla. Sen sijaan muu kalastaminen vaatii kalastusluvan. Metsähallituksen <a href="https://www.eraluvat.fi/"><strong>Eräluvat-palvelusta</strong></a> löydät kalastus- ja muut eräluvat.
+							</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#parks" aria-expanded="false" aria-controls="parks">Puistot</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="parks">
+										<div class="card card-body">
+											<p class = "text-cener"><a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/puistot/urheilupuisto"><strong>Urheilupuisto</strong></a> on aivan keskustan tuntumassa lukuisine urheilumahdollisuuksineen sekä kävelyreitteineen. Puisto on paikoittain jopa metsittynyt ja sisältää suuren puiston lisäksi lukuisia urheilupaikkoja. Urheilupuiston keskellä sijaitsee Paavo Nurmen Stadion. Lenkkeilyreitti kiertää puistoa. Puistossa on lisäksi kaksi leikkipuistoa ja lukuisia historiallisia rakennuksia.</p>
+											
+										<p><a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/puistot/vartiovuorenpuisto"><strong>Vartiovuoren puisto</strong></a> on suosittu puisto, esimerkiksi piknikin viettämiseen, aivan keskustassa kukkulan päällä.</p>
+										
+										<p><a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/puistot/linnanpuisto"><strong>Linnanpuisto</strong></a> ympäröi historiallista Turun Linnaa.</p>
+										
+										<p><a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/puistot/puolalanpuisto"><strong>Puolalanpuisto</strong></a> on yksi arkkitehtuurisesti merkittävimpiä ympäristöjä Turussa. Puolalanmäki on kukkulalla noin 200 metriä Turun kauppatorilta ja sieltä avautuu hienot näkymät keskustan ylle sekä puiston ympärille.</p>
+										
+										<p><a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/puistot/kupittaanpuisto"><strong>Kupittaanpuisto</strong></a> on Suomen suurin urbaani puisto ja se kätkee sisäänsä lukuisia mahdollisuuksia eri aktiviteetteihin. Alueelta löytyy ison puistomaiseman lisäksi muun muassa lintupuisto, liikennepuisto, Veritas jalkapallostadion, ravintola, maauimala ja paljon muuta.</p>
+											
+										<p><a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/puistot/samppalinnanpuisto"><strong>Samppalinnanpuisto</strong></a> on tunnettu maauimalastaan ja näköalapaikoistaan, erityisesti Petreliuksen patsaan kohdalla. Lisäksi se sijaitsee suoraan jokilaivojen lähettyvillä.</p>
+										
+										<a href="../map.html?search=puisto"><button type="button" class="btn btn-dark btn-block">Puistoon</button></a>	</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#pathsCyclingRoutes" aria-expanded="false" aria-controls="pathsCyclingRoutes">Ulkoilureitit</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="pathsCyclingRoutes">
+										<div class="card card-body">
+											<div class="card card-body">
+											<p class = "text-cener">Turun kaupungissa Aurajoen rantojen varrella on monia kuntoilureittejä eri kulttuuriteemojen sävyttäminä. Kaikki kävely-, lenkkeily- ja pyöräilypolut löytyvät Turun kaupungin <a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/polut-reitit-ja-ladut"><strong>nettisivuilta</strong></a>. Suurin osa poluista on valaistu iltakymmeneen asti.</p>
+											<p>Turun kuntoilu- ja lenkkipoluilta löytyy myös <a href="http://www.turku.fi/kulttuuri-ja-liikunta/liikunta/liikuntapaikat/ulkoliikuntapaikat/ulkokuntoilulaitteet"><strong>puistokuntosalilaitteita</strong></a>, joiden avulla voi harjoitella lihaskuntoa ulkoilmassa. Kyseisiä laitteita on esimerkiksi Kupittaanpuistossa ja Urheilupuistossa.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#nature" aria-expanded="false" aria-controls="nature">Luonto</button>
+							</p>
+							
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="nature">
+										<div class="card card-body">
+											<p>Turun alueella sijaitsee useita <a href="http://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/luonnonsuojelualueet"><strong>luonnonsuojelualueita</strong></a>. Alueet ovat erittäin monipuolisia ja erilaisia, näin ollen ne tarjoavat varmasti nähtävää jokaiselle.
+											<p><a href="http://www.kuhankuono.fi/"><strong> Kuhankuonon alue</strong></a> ulottuu useamman kunnan alueelle ja kätkee sisäänsä lukuisia polkuja ja kauniita vaellusreittejä. Vaellusreitit sijaitsevat noin 35 kilometrin päässä Turun keskustasta.</p>
+											<p><a href="https://www.turku.fi/kulttuuri-ja-liikunta/ulkoilualueet/ulkoilusaaret"><strong>Turun saaristoa</strong></a> pidetään yhtenä maailman kauneimmista paikoista. Turun keskustasta starttaa useita risteilyjä jotka kiertävät ympäri saaristoa. Saaristoa on myös mahdollista kierrellä polkupyörällä, mikäli reitit suunnittelee lossien varrelle. Yksi suosituimmista lähialueen saarista on Airistolla sijaitseva Vepsä, joka on hieno paikka päiväretkelle. Vepsään pääsee <a href="http://www.rosita.fi/Vepsa"><strong>vesibussilla</strong></a> Aurajoen rannasta.</p>
+											<p>Tutustu myös <a href="http://www.saaristonrengastie.fi/"><strong>Saariston rengastiehen</strong></a>, joka on valittu useaan otteeseen parhaaksi kotimaankohteeksi.</p>
+										
+										<a href="../map.html?search=luonnonsuojelualue"><button type="button" class="btn btn-dark btn-block" >Retkelle luontoon</button></a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+											
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#beaches" aria-expanded="false" aria-controls="beaches">Uimarannat</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="beaches">
+										<div class="card card-body">
+											<p class = "text-cener">Turun seudun uimarannat on listattu kaupungin <a href="http://www.turku.fi/kulttuuri-ja-liikunta/liikunta/liikuntapaikat/uimapaikat-ja-vesiliikunta/uimarannat"><strong>nettisivuille</strong></a>. Rantoja on sekä meren että lähialueiden järvien rannoilla. Kaikki rannat ovat pyörä- tai bussimatkan etäisyydellä Turusta.<br/><br/>Jos haluat kokea jotain erikoista, kokeile uintia talvella Ruissalossa tai Ispoisissa (<a href=" http://www.turku.fi/vapaa-aika/liikunta/ulkoliikunta/talviuintipaikat"><strong>Talviuintipaikat</strong></a>).</p>
+											
+											<a href="../map.html?search=Beaches Near Turku, Finland"><button type="button" class="btn btn-dark btn-block" >Uimaan</button></a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+  </body>
+  
+  <script src="../scripts/lists.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+  
+</html>

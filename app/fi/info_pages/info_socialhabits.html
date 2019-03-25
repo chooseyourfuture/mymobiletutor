@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+ <head>  
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img src="../../img/home-black.png" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="socialHabitsContainer">   
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/culture-social habits.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Tavat</h5>
+							<p>Olemme kuvanneet suomalaisen yhteiskunnan, arvojen ja tapojen erityispiirteitä tarkemmin englanninkielisessä versiossa, johon voit halutessasi tutustua vaihtamalla sovelluksen kieliasetuksia. Kannattaa neuvoa kansainvälisiä kavereitasi tutustumaan sisältöön, jos heitä mietityttää jotkin suomalaisiin toimintatapoihin liittyvät asiat. Ole myös aktiivinen kansainvälisten kavereidesi opastaja, sillä ystävät ovat paras tapa oppia itselleen uudesta kulttuurista!</p>
+							<p>Osio opiskelu- ja työkulttuuri kannattaa kaikkien lukea, sillä olemme kuvanneet keskeisiä yliopistokulttuuriin ja opiskeluun liittyviä tapoja.</p>
+							<p>Kulttuurin ja sen tapojen kuvaaminen on toki aina yleistävää ja poikkeuksia on paljon, mutta yleisten toimintatapojen tunteminen auttaa arjessa. Jos haluat vertailla suomalaisen yhteiskunnan ominaispiirteitä muihin maihin, voit aloittaa tutustumalla esimerkiksi <a href="https://www.hofstede-insights.com/country-comparison/"><strong>Hofstede Insights</strong></a>-sivuston maakuvauksiin.</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#generalHabits" aria-expanded="false" aria-controls="generalHabits">Yleistä</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="generalHabits">
+										<div class="card card-body">
+											<p>Suomalaisen yhteiskunnan tyypillisin piirre on matala hierarkia yhteiskunnan joka tasolla. Tämä näkyy myös korkeassa tasa-arvossa, vaikka toki monien vähemmistöjen asemassa on vielä parannettavaa. Yleisellä tasolla tasa-arvo etenkin sukupuolten välillä on maailman huippua.</p>
+											<p>Suomalaiset ovat individualisteja ja arvostavat henkilökohtaista vapautta ja oikeutta tehdä omia päätöksiä. Tämä eroaa suuresti monista kulttuureista, joissa perhe ja jopa suku tekevät päätöksiä erityisesti nuorten puolesta. Esimerkiksi arviointeja tehtäessä tai palkatessa työntekijöitä, Suomessa annetaan arvoa saavutuksille ja pätevyydelle henkilökohtaisten suhteiden sijaan. Toki henkilökohtaiset verkostot ovat tärkeitä, erityisesti nykyajan työelämässä.</p>
+											<p>Suomessa arvostetaan lähtökohtaisesti enemmän korkeaa elämänlaatua kuin materiaalisia saavutuksia. Myöskään statuksen ja saavutusten korostaminen ei ole tyypillistä.</p>
+											<p>Välillä suomalaiset säännöt ja määräykset aiheuttavat jopa hilpeyttä. Suomalaiset noudattavat kuitenkin poikkeuksellisen tarkasti annettuja määräyksiä, ja tämä aiheuttaa monissa ulkomaalaisissa hämmästystä etenkin silloin, kun kyseessä ei ole elintärkeät asiat.</p>
+											<p>Politiikka ja uskonto ovat Suomessa useimmiten henkilökohtaisia asioita ja niistä keskustellaan pääasiassa vain hyvien ystävien kesken. Joissain kulttuureissa nämä aiheet ovat täysin tabuja, kun taas toisaalla jokapäiväisiä keskustelun aiheita. Kannattaa kuulostella uusien tuttaviesi halua keskustella näistä aiheista.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#workingCulture" aria-expanded="false" aria-controls="workingCulture">Opiskelu- ja työkulttuuri</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="workingCulture">
+										<div class="card card-body">
+											<p>Moneen muuhun maahan verrattuna suomalaisissa (korkea)kouluissa ja työpaikoilla on matala hierarkia. Yliopistolla on helppoa lähestyä professoreita ja muuta henkilökuntaa ja keskustella heidän kanssaan tasavertaisena keskustelijana käsiteltävänä olevista asioista. Omat perustellut näkemykset ja rakentava kritiikki ovat toivottuja asioita yliopisto-opinnoissa.</p>
+											<p>Opettajien rooli yliopistolla on mahdollistaa oppiminen ja opastaa tiedon ja ajattelun äärelle, ei niinkään antaa valmiita vastauksia. Tämä tarkoittaa sitä, että sinun tulee ottaa vastuu tiedon hakemisesta ja omista opinnoistasi! Apua saa ja pitää pyytää, mutta ennen tätä pitää yrittää itse ja pohtia vaihtoehtoja. Tällainen toimintatapa valmentaa erityisesti työelämään, jossa on pakko ottaa vastuu omista tehtävistään. Toisaalta itsenäinen vastuu myös antaa vapautta opiskella itselle sopivilla tavoilla ja voit määrittää ainakin jonkin verran omia aikataulujasi opintojen etenemisen suhteen.</p>
+											<p>Tiimityöskentely erilaisten tehtävänantojen parissa on tyypillistä monissa oppiaineissa. Myös tiimityöskentely opettaa vastuunottoa, sillä tiimi on yhdessä vastuussa työnsä etenemisestä ja tuloksista. Ole luotettava ja aktiivinen osa tiimiä!</p>
+											<p>Täsmällisyys ja annetuissa aikatauluissa pysyminen esimerkiksi tehtävien palautusten suhteen on tärkeää. Kursseilla voi olla satoja opiskelijoita, joten opettajat eivät voi antaa jokaiselle omia pidennettyjä aikatauluja. Osalla kursseista suoritus voidaan hylätä, jos et noudata annettuja aikatauluja. Opettele siis tekemään harjoitukset ennemmin ajoissa kuin viimeisenä iltana, jolloin myöskään yllättävät tapahtumat kuten sairastumiset eivät aiheuta ongelmia. Jos kohtaat ylitsepääsemättömiä esteitä aikataulujen tai muuten kurssien suoritusten suhteen, ole mahdollisimman ajoissa yhteydessä kurssin vastuuhenkilöön.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#otherManners" aria-expanded="false" aria-controls="otherManners">Muut tavat</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="otherManners">
+										<div class="card card-body">
+											<p>Olemme kuvanneet arkisia tapoja liittyen mm. tervehtimiseen, ruokaan, juomaan, kahvikulttuuriin, jonottamiseen, tippaamiseen, vierailuihin ym. englanninkielisessä versiossa. Alla on muutamia huomioita, joita myös suomalaisten opiskelijoiden kannattaa ottaa huomioon.</p>
+											<p>Turun yliopisto on savuton kampus, jossa tupakointi on sallittua ainoastaan <a href="http://www.utu.fi/fi/sivustot/savuton/tupakointipaikat/Sivut/home.aspx"><strong>merkityillä paikoilla</strong></a>. Kannattaa myös varmistaa, saako esimerkiksi omalla parvekkeella tupakoida vai onko taloyhtiöllä merkitty paikka tupakoinnille.</p>
+											<p>Maksaminen tapahtuu pääasiassa korteilla, verkkopankissa tai mobiilina. Esimerkiksi yo-kylässä monet palvelut, esimerkiksi pyykkitupa, maksetaan verkossa.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#cultureShock" aria-expanded="false" aria-controls="cultureShock">Kulttuurishokki</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="cultureShock">
+										<div class="card card-body">
+											<p>Erityisesti uuteen maahan muuttaminen saattaa aiheuttaa kulttuurishokin, mutta joskus myös kotimaassa muuttaminen erilaiseen paikkaan, kotoa poismuuttaminen ja uudenlainen opiskelijakulttuuri saattaa aiheuttaa epämiellyttäviä tuntemuksia. Tyypillisiä oireita ovat koti-ikävä, alakuloisuus, keskittymisvaikeudet ja ärsyyntyneisyys sekä fyysiset oireet kuten huonovointisuus, univaikeudet ja ruokahalun menettäminen. Oireiden ja kuultuurishokin vaiheiden tunnistaminen ja sen tiedostaminen, että tämä on melko yleistä, saattaa jo itsessään auttaa. Kulttuurishokissa on neljä tunnistettavaa vaihetta.</p>
+											<p><strong>1. Euforia</strong>: Olet utelias kaikkea uutta kohtaan ja uudet asiat ovat kiehtovia.</p>
+											<p><strong>2. Konflikti</strong>: Tunnistat asioita, jotka ovat eri tavalla kuin mihin olet tottunut ja erilaisuus saattaa turhauttaa ja aiheuttaa jopa vihamielisyyttä. Saatat vertailla uutta ja vanhaa ja kokea olosi yksinäiseksi. Tutut asiat ja ihmiset yleensä auttavat.</p>
+											<p><strong>3. Asteittainen toipuminen</strong>: Alat hyväksyä erilaisuutta ja arvostaa myös uusia asioita unohtamatta vanhaa. Alat tuntea olosi kotoisaksi uudessa ympäristössä.</p>
+											<p><strong>4. Hyväksyminen</strong>: Kun olet mukana erilaisissa sosiaalisissa aktiviteeteissa ja olet saanut uusia ystäviä, alat olla osa uutta ympäristöäsi. Takaisin palaaminen alkaa tuntua vaikealta.</p>
+											<p>Jos tunnistat kokevasi kulttuurishokkia, on tärkeää suhtautua siihen rakentavasti ja yrittää jatkaa normaalia elämää. Alla on muutamia hyväksi koettuja keinoja.</p>
+											<ul>
+											    <li>Tutustu uuteen ympäristöösi ja sen <a href="info_services.html">palveluihin</a>, <a href="info_groceries.html">ruokakauppoihin</a> ja erityisesti <a href="info_fun.html">vapaa-ajanmahdollisuuksiin</a>.</li>
+											    <li>Tee uudesta asunnostasi mahdollisimman viihtyisä.</li>
+											    <li>Tutustu opiskelukavereihisi ja naapureihisi, moni heistä on samassa tilanteessa.</li>
+											    <li>Hanki harrastus! Katso täältä ideoita: <a href="info_artsandcrafts.html">taide ja kädentaidot</a>, <a href="info_music.html">musiikki</a>, <a href="info_outdoors.html">ulkoilu</a> and <a href="info_sports.html">urheilu</a>.</li>
+											    <li>Pidä itsestäsi hyvää huolta; nuku, syö ja liiku tarpeeksi.</li>
+											    <li>Mene mukaan <a href="https://www.tyy.fi/fi/jarjestoille"><strong>opiskelijajärjestöjen</strong></a> toimintaan.</li>
+											    <li>Pidä yhteyttä kotiin, vanhoihin ystäviin ja tuttuihin asioihin.</li>
+											</ul>
+											<p>Lisäksi voit aina pyytää apua kavereiltasi, tutoriltasi, opinto-ohjaajalta, <a href="http://www.utu.fi/fi/yksikko/yliopistopalvelut/opintohallinto/ohjauksen-ja-koulutuksen-tukipalvelut/Sivut/home.aspx"><strong>opintopalveluista</strong></a> ja <a href="http://www.yths.fi/yhteystiedot/toimipisteet/turku"><strong>YTHS:ltä</strong></a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+ <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"></div><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+  </body>
+<script src="../scripts/lists.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+</html>

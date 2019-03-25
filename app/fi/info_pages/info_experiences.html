@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+ <head>  
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="experienceCultureContainer">   
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/culture_experience.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Elämyksiä</h5>
+							<p>Suomi on monipuolinen maa kokea sekä luonnon tarjoamia elämyksiä että nauttia kulttuurista ja monipuolisista tapahtumista. Alle on koottu suomalaisia elämyksiä, joista moni meistä nauttii arjessaan ja jotka ovat erityisesti ulkomaalaisille eksoottisia kokemuksia. Näitä kannattaa suositella kansainvälisille opiskelukavereille ja muille tutuille sekä tietysti liittyä mukaan pitämään hauskaa.</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#inFinland" aria-expanded="false" aria-controls="inFinland">Suomessa</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="inFinland">
+										<div class="card card-body">
+											<p><a href="https://finland.fi/life-society/bare-facts-of-the-sauna/"><strong>Sauna</strong></a> on tärkeä osa valtaosalle suomalaisista ja samalla yksi suomalaisen kulttuurin kiehtovimmista asioista ulkomaalaisille. Suosittelemmekin kertomaan saunakulttuuristamme uusille kansainvälisille tuttavillesi. Kannattaa kuitenkin huomioida, että kaikki eivät ole tottuneet alastomuuteen, kuumuuteen ja saunassa koettuun välittömyyteen samoin kuin moni suomalainen.</p>
+											<p><a href="https://www.visitfinland.com/article/a-refreshing-dip-icy-waters/"><strong>Avantouinti</strong></a> liittyy usein saunomiseen ja on eksoottinen kokemus niin monelle ulkomaalaiselle kuin suomalaisellekin. Turun seudulla on useita <a href="http://www.turku.fi/vapaa-aika/liikunta/ulkoliikunta/talviuintipaikat"><strong>avantouintipaikkoja</strong></a>.</p>
+											<p><a href="https://www.visitfinland.com/article/the-essentials-of-cottage-life/"><strong>Kesämökkien</strong></a> korkea lukumäärä Suomessa aiheuttaa usein ihmetystä. Kesämökit ovat luonnollisesti paikkoja olla lähellä luontoa, nauttia hiljaisuudesta ja rauhasta sekä paeta hektistä elämää. Kutsun saaminen kesämökille on monelle arvokas asia.</p>
+											<p><a href="https://www.visitfinland.com/article/autumn-and-spring-the-best-aurora-seasons/"><strong>Revontulet</strong></a> ovat monelle suomalaisellekin ainutlaatuinen kokemus. Pohjoisessa revontulia nähdään keskimäärin 200 yönä vuodessa. Myös Turun seudulla voi silloin tällöin todistaa kauniita luonnon valoja, mutta tällöin kannattaa suunnata pois kaupungin valoista. Ilmatieteenlaitoksen ylläpitämältä <a href="http://aurorasnow.fmi.fi/public_service/"><strong>sivustolta</strong></a> voi seurata revontulien näkyvyyttä.</p>
+											<p><a href="https://www.visitfinland.com/article/land-of-the-midnight-sun/"><strong>Yötön yö</strong></a> ja pitkät aurinkoiset illat ovat suomalaisen kesän kohokohtia.</p>
+											<p>Luonto on helposti saavutettavissa lähes jokapuolella Suomea. Tutustu Turun alueen luonto- ja ulkoilumahdollisuuksiin tarkemmin <a href="info_outdoors.html">täällä</a>. Muista luonnossa liikkuessasi noudattaa <a href="http://www.luontoon.fi/jokamiehenoikeudet"><strong>jokamiehenoikeuksia</strong></a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#inTurku" aria-expanded="false" aria-controls="inTurku">Turussa</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="inTurku">
+										<div class="card card-body">
+											<p>Turku on monin tavoin aktiivinen paikka asua ja tästä sovelluksesta löydät ideoita vapaa-aikaan (kurkkaa esim. täältä <a href="info_fun.html">Viihde</a>, <a href="info_restaurants.html">Ravintolat</a>, <a href="info_sports.html">Urheilu</a>, <a href="info_outdoors.html">Ulkoilu</a> ja <a href="../events.html">Tapahtumat</a>)! Halutessasi erityisiä kokemuksia paikallisten kanssa tai jos haluat itse tarjota elämyksiä muille, tutustu <a href="https://fi.doerz.com/"><strong>Doerzin</strong></a> tarjontaan.</p>
+											<p><a href="http://www.visitturku.fi/visit-turku/turun-alue/kaupunki"><strong>Turku</strong></a> on Suomen entinen pääkaupunki ja samalla vanhin kaupunki, eli kaupungissa on monia kiinnostavia historiallisesti merkittäviä kohteita ja alueita. Aurajoki jakaa Turun kahtia ja sen varrella on sekä vehreitä ulkoilumaisemia että monipuolisia ravintoloita, kahviloita ja jokilaivoja. Kesällä ja joulunaikaan Turussa on monia markkinoita ja festivaaleja kuten Ruisrock ja DBTL. Seuraa kaupungin tapahtumia <a href="http://kalenteri.turku.fi/events/calendar"><strong>täällä</strong></a> ja opiskelijatapahtumia <a href="../events.html">täällä</a>.</p>
+											<p><a href="https://www.turku.fi/turunlinna"><strong>Turun linna</strong></a> on ehdottomasti vierailun arvoinen paikka, sillä se on yli 700 vuotta vanha keskiaikainen rakennus ja samalla yksi Suomen vanhimmista rakennuksista. Se on toiminut hallintorakennuksena, hallitsijoiden asuinpaikkana sekä vankilana. Linna sijaitsee Aurajoen suulla lähellä satamaa.</p>
+											<p><a href="http://www.turunseurakunnat.fi/kirkot-ja-kappelit/turun-tuomiokirkko"><strong>Turun tuomiokirkkoa</strong></a> pidetään Suomen arvokkaimpana rakennushistoriallisena muistomerkkinä ja se toimii edelleen Suomen evankelisluterilaisena pääkirkkona. Se vihittiin tuomiokirkoksi vuonna 1300, ja sen yksityiskohdat kertovat monipuolisesti Suomen historiasta. Tuomikirkko on myös Turun symboli ja sijaitsee monen opiskelijankin päivittäisen reitin varrella.</p>
+											<p><a href="http://www.visitturku.fi/visit-turku/turun-alue/lahialueet-saaristo"><strong>Turun saaristoa</strong></a> pidetään yhtenä maailman kauneimmista saaristoista. Saaristoon kuuluu yli 20 000 saarta, joista monet ovat täysin luonnontilaisia. Saaristosta pääsee parhaiten nauttimaan veneellä, mutta monille saarille on myös julkisia bussi- ja lauttayhteyksiä. Kannattaa myös lähteä pyöräilemään <a href="http://www.saaristonrengastie.fi/"><strong>Saariston Rengastielle</strong></a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+ <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"></div><div id="leMap"></div></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+  </body>
+<script src="../scripts/lists.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+</html>

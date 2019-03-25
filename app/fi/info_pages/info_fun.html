@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+ <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../leCss.css">
+													 
+		<!-- Optional JavaScript --> 
+		<script src="../../progress.js"></script>
+		<script src="../scripts/autoscroll.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+		<header class="navbar fixed-top navbar-light bg-light">
+			<div class="container">
+				<a class="nav-item nav-link" href="../index.html"><img class="svg-size" src="../../img/Resources/Icons/home_white.svg" /></a>
+				<a class="nav-item nav-link" href="../campusMap.html"><img class="svg-size-camp" src="../../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+				<a class="nav-item nav-link" href="../profile.html"><img src="../../img/user-white.png" /></a>
+			</div>
+		</header>
+		<section class="container mainContainers" id="funContainer">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<img class="card-img-top" src="../../img/Images/games_AdobeStock_84860408.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title  text-center">Viihde</h5>
+							<p>Turussa on monenlaisia mahdollisuuksia vapaa-ajan viettoon, löydä suosikkisi alla olevista vaihtoehdoista.</p>
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#movies" aria-expanded="false" aria-controls="movies">Elokuvat</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="movies">
+										<div class="card card-body">
+											<p>Turun keskustassa sijaitsee elokuvateatteri <strong><a href="https://www.finnkino.fi/fi/?SetHome=1&TheatreArea=1022">Kinopalatsi</a></strong>, jossa on yhdeksän salia. Lippujen hinnat vaihtelevat 9-15 välillä riippuen näytöksen ajankohdasta, myös sarjalippuja on tarjolla.</p>
+											<p>Turun yliopiston ylioppilaskunnan ylläpitämä <strong><a href="http://www.kinokopla.fi/">Kinokopla</a></strong> on turkulainen elokuvakerho, joka järjestää elokuvailtoja ja muita elokuva-aiheisia tapahtumia. Elokuvia on katsottavissa sunnuntaisin klo 17.00 ja 20.00 Logomolla (<a href="../map.html?search=Köydenpunojankatu 14 Turku&event=true">Köydenpunojankatu 14</a>). Sarjakortti maksaa opiskelijoille 22 euroa ja sillä pääsee katsomaan kaikki kauden elokuvat. Varmistaaksesi paikan näytökseen, saavu paikalle vähintään 10 minuuttia ennen näytöksen alkua. Yksittäisliput maksavat 5 euroa/näytös ja vaatii lisäksi 1 euron maksavan jäsenkortin. Yksittäislippuja myydään, mikäli paikkoja on näytökseen vapaana. Lisätietoa täältä.</p>
+											<p><strong><a href="http://logomo.fi/tapahtumat/tapahtumakalenteri/">Logomo</a></strong> on entinen VR:n konepaja ja nykyinen monipuolinen tapahtumakeskus. Logomossa on Kinokoplan näytösten lisäksi muitakin elokuvailtoja.</p>
+											<a href="../map.html?search=Elokuvateatteri"><button type="button" class="btn btn-dark btn-block" >Elokuviin</button></a> 
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#theaterAndDance" aria-expanded="false" aria-controls="theaterAndDance">Teatterit ja tanssi</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="theaterAndDance">
+										<div class="card card-body">
+											<p>Turussa on kaksi pääteatteria; suomenkielinen <strong><a href="http://teatteri.turku.fi/">Turun kaupunginteatteri</a></strong> ja ruotsinkielinen <strong><a href="https://www.abosvenskateater.fi/fi/tervetuloa/">Åbo Svenska Teater</a></strong>.</p>
+											<p>Turussa toimii myös pienempiä teattereita, esimerkiksi <strong><a href="http://linnateatteri.fi/">Linnateatteri</a></strong>. Turussa ja lähikunnissa toimii kesäaikaan myös useita ulkoilmateattereita, joihin kannattaa ostaa liput hyvissä ajoin.</p>
+											<p>Turussa on myös kaksi opiskelijateatteria: <strong><a href="http://turunylioppilasteatteri.fi/">Turun Ylioppilasteatteri</a></strong> ja <strong><a href="http://web.abo.fi/karen/special/steatern/">Studentteatern i Åbo</a></strong>. Opiskelijateattereiden toimintaan voi liittyä mukaan tai vain nauttia esityksistä.</p>
+											<p>Lisäksi Turun seudulla toimii <strong><a href="http://www.aurinkobaletti.fi/">Aurinkobaletti</a></strong> ja <strong><a href="http://eri.fi/">Tanssiteatteri ERI</a></strong>.</p>
+											<p>Useisiin teatterinäytöksiin voi ostaa lippuja ennakkoon netistä. Tarkista ohjeet teattereiden nettisivuilta.</p>
+											<a href="../map.html?search=Teatteri"><button type="button" class="btn btn-dark btn-block" >Teatteriin</button></a> 
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#exhibitions" aria-expanded="false" aria-controls="exhibitions">Näyttelyt</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="exhibitions">
+										<div class="card card-body">
+											<p>Turussa on kolme suurta taidemuseota ja lisäksi muita pienempiä näyttelyitä ja museoita. <strong><a href="http://www.turkuart.fi/">TurkuART</a></strong> on koonnut yhteen Turun alueen näyttelyitä ja museoita.</p>
+											<p><strong><a href="http://www.turuntaidemuseo.fi/">Turun taidemuseo</a></strong> sijaitsee Puolalamäellä ja on tunnettu erityisesti vanhemmasta suomalaisesta taiteesta, surrealismista ja pop-taiteesta.</p>
+											<p><strong><a href="http://www.turku.fi/waino-aaltosen-museo">Wäino Aaltosen museo</a></strong> sijaitsee Aurajoen varrella n. 15 minuutin kävelymatkan päässä Kauppatorilta ja toimii Turun kaupungin taidemuseona.</p>
+											<p><strong><a href="http://www.aboavetusarsnova.fi/fi">Ars Nova</a></strong> on modernin taiteen museo ja sen yhteydessä Aurajoen rannalla toimii myös historian museo Aboa Vetus.</p>
+											<a href="../map.html?search=Museo"><button type="button" class="btn btn-dark btn-block" >Näyttelyyn</button></a> 
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#libraries" aria-expanded="false" aria-controls="libraries">Kirjastot</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="libraries">
+										<div class="card card-body">
+											<p>Turussa on useita kirjastoja, joista voi lainata kirjoja ja muuta materiaalia, lukea lehtiä, käyttää tietokonetta ja tulostinta, opiskella hiljaisissa tiloissa sekä varata työskentelytiloja. Tarvitset kirjastokortin suurimpaan osaan kirjastojen palveluista. Kirjastokortin saa palvelutiskiltä esittämällä henkilöllisyystodistuksen sekä yliopistojen että kaupunginkirjastoissa. Kirjastokortti on maksuton.</p>
+											<p>Muista palauttaa kirjat ajoissa! Myöhästyneistä palautuksista syntyy sakkomaksuja ja rajan ylittäessään aiheuttaa lainauskiellon, kunnes maksut on suoritettu. Ole erityisen huolellinen yliopistokirjastoissa, sillä sakkomaksut ylittävät nopeasti lainakieltoon johtavan 10 euron rajan.</p>
+											<p><strong><a href="http://www.utu.fi/fi/yksikot/kirjasto/Sivut/home.aspx">Turun yliopiston kirjasto</a></strong> sijaitsee kuudessa eri toimipisteissä ympäri kampusta. Suurin osa kirjastojen palveluista on maksuttomia. Yksiköt ja niiden aukioloajat löytyvät <strong><a href="http://www.utu.fi/fi/yksikot/kirjasto/kirjastot-ja-aukioloajat/Sivut/home.aspx">täältä</a></strong>. <strong><a href="https://utu.finna.fi/">Volter</a></strong> on aineistohakupalvelu, josta löytyvät kirjat, artikkelit ja elektroniset materiaalit.</p>
+											<p><strong><a href="https://www.abo.fi/fi/kirjasto/">Åbo Akademin kirjasto</a></strong> koostuu pääkirjastosta ja neljästä ainekohtaisesta kirjastosta. Myös muut kuin Åbo Akademin opiskelijat voivat hankkia kirjastokortin. Aineistohakuja voi tehdä <strong><a href="https://abo.finna.fi/?lng=fi">Alma cataloguen</a></strong> kautta.</p>
+											<p><strong><a href="https://www.turku.fi/turun-kaupunginkirjasto">Turun kaupunginkirjaston pääkirjasto</a></strong> sijaitsee keskustassa osoitteessa <a href="../map.html?search=Linnankatu 2 Turku&event=true">Linnankatu 2</a> ja toimii kaupunkilaisten olohuoneena. Jokainen kirjastokortin hankkinut voi lainata kirjoja ja muita aineistoja maksutta. Kirjastossa on käytössä tietokoneita ja alueella toimii myös ilmainen wifi. <strong><a href="https://vaski.finna.fi/">Vaski-verkkokirjastosta</a></strong> löytyy lisätietoa Turun alueen kirjastoista ja lainattavista aineistoista.</p>
+											<a href="../map.html?search=Kirjasto"><button type="button" class="btn btn-dark btn-block" >Kirjastoon</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#music" aria-expanded="false" aria-controls="Music">Musiikki</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="music">
+										<div class="card card-body">
+											<p>Turussa on monipuolinen musiikkitarjonta. Suuremmat konsertit pidetään yleensä <strong><a href="http://logomo.fi/tapahtumat/tapahtumakalenteri/">Logomossa</a></strong> tai <strong><a href="https://turku-areenat.fi/fi/gatorade-center/tapahtumat">Gatorade Centerillä</a></strong> ja pienempiä keikkoja on klubeilla tai yliopistojärjestöjen tiloissa. Turun konserttitalossa esiintyy <strong><a href="http://www.tfo.fi/fi">Turun filharmoninen orkesteri</a></strong>.</p>
+											<p>Turussa järjestetään myös monia festareita, joista tunnetuin on ehdottomasti <strong><a href="http://www.ruisrock.fi/">Ruisrock</a></strong>. Lisäksi Turussa järjestetään vuosittain kaupunkifestari <strong><a href="http://www.dbtl.fi/">DBTL</a></strong>, <strong><a href="http://www.turkujazz.fi/">Turku Jazz Festival</a></strong> ja <strong><a href="https://aurafest.fi/">Aura Fest</a></strong>.</p>
+											<a href="../map.html?search=Konsertti"><button type="button" class="btn btn-dark btn-block" >Konserttiin</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#themeParks" aria-expanded="false" aria-controls="themeParks">Teemapuistot</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="themeParks">
+										<div class="card card-body">
+											<p><strong><a href="http://www.flowpark.fi/turku/">Flowpark</a></strong> on ekologinen seikkailuhuvipuisto, jossa seikkailuradat on rakennettu eläviin puihin. Lukuisia erilaisia tehtäviä pääsee suorittamaan jopa 20 metrin korkeudella. Flowpark on tarkoitettu kaikenikäisille 7-vuotiaasta ylöspäin – haastetta löytyy niin aloittelijoille kuin kokeneille kiipeilijöillekin.</p>
+											<p><strong><a href="https://www.hoplop.fi/puistot/turku">HopLop</a></strong> on liikunnallinen seikkailupuisto koko perheelle, taitotasosta riippumatta.</p>
+											<p><strong><a href="http://www.jukupark.fi/Turku">JukuPark</a></strong> on vesipuisto, joka sijaitsee muutaman kilometrin päässä Turun keskustasta, lähellä Impivaaran uimahallia. 2,5 hehtaarin alueella on vesiliukumäkiä, joissa voi laskea renkailla, vauhtimatolla tai perinteisesti. Puistoalueella on myös muuta hauskaa tekemistä mm. Jättivesipalloja, Power Paddlers miniveneitä, alueita auringonottoon sekä ravintola.</p>
+											<p><strong><a href="http://www.turku.fi/seikkailupuisto">Seikkailupuisto</a></strong> on paitsi leikkipuisto myös lasten ja perheiden toimintakeskus, joka sijaitsee laajan Kupittaanpuiston laidalla. Vaihtuvat teatteriesitykset, osallistavat tapahtumat sekä työskentely taidepajoissa ovat toiminnan kulmakiviä. Seikkailupuisto on aina avoinna ja tapahtumia lukuunottamatta maksuton.</strong>
+											<p><strong><a href="https://superpark.fi/park/turku/">SuperPark</a></strong> on koko perheen liikunnallinen sisäaktiviteettipuisto, jossa on paljon erilaisia pelejä aktiviteetteja.</p>
+											<a href="../map.html?search=Teemapuisto"><button type="button" class="btn btn-dark btn-block" >Teemapuistoon</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p>
+								<button id="lastItem" class="btn btn-block btn-basic" type="button" data-toggle="collapse" data-target="#games" aria-expanded="false" aria-controls="games">Pelit</button>
+							</p>
+							<div class="row justify-content-center">
+								<div class="col-12">
+									<div class="collapse multi-collapse" id="games">
+										<div class="card card-body">
+											<p>Turussa on kolme keilahallia: <strong><a href="http://www.aninkaistenkeilahalli.fi/">Aninkaisten keilahalli</a></strong>, <strong><a href="http://bowler.fi/">Bowler</a></strong> ja <strong><a href="http://www.kupittaankeilahalli.fi/">Kupittaan keilahalli</a></strong>.</p>
+											<p>Jos olet kiinnostunut minigolfista, suuntaa <strong><a href="http://www.hohtogolf.fi/turku/">Hohtogolf West Coast</a></strong>:iin Yliopistonkadulle.</p>
+											<p>Biljardia voi pelata useissa Turun baareissa ja esimerkiksi <strong><a href="http://www.galaxie.fi/turku/">Galaxie Center</a></strong> on erikoistunut biljardiin.</p>
+											<p>Turussa on myös useampia huonepakopelejä, kuten <strong><a href="https://www.fobia.fi/">Fobia Room Escape</a></strong>, <strong><a href="http://www.roomescapeturku.com/">Real-Life Room Escape</a></strong> ja <strong><a href="http://liveexitgames.fi/">Live Exit Games</a></strong>.</p>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+  <footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="../city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../../img/Resources/Icons/city_info_black_circle.svg" />
+					<figcaption class="figure-caption text-center text-light">Info</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="../map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"></h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="lelisttry"><div id="leMap"></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+  </body>
+  <script src="../scripts/lists.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+
+</html>

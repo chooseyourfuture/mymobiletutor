@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-122656902-1');
+        </script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="leCss.css">
+													
+		<!-- Optional JavaScript -->
+		<script src="../idb.js"></script>
+		<script src="../progress.js"></script>
+		<script src="../resources/jquery/jquery-3.2.1.min.js"></script>     <!-- Moved from below to then start ui -->
+		<link rel="stylesheet" href="../resources/jquery/jquery-ui-1.12.1/jquery-ui.css">
+		<script src="../resources/jquery/jquery-ui-1.12.1/jquery-ui.js"></script>
+		<script>
+			$( function() {
+				$( "#datePickStart" ).datepicker({
+					dateFormat: "yy-mm-dd",
+					minDate: "0"
+				});
+				$( "#datePickEnd" ).datepicker({
+					dateFormat: "yy-mm-dd",
+					minDate: "0"
+				});
+				$( "#customEventInputSDate" ).datepicker({
+					dateFormat: "yy-mm-dd",
+					minDate: "0"
+				});
+				$( "#customEventInputEDate" ).datepicker({
+					dateFormat: "yy-mm-dd",
+					minDate: "0"
+				});
+			} );
+		</script>
+		<!-- Thynote for event creation/transition to date/ime picker. If only wanted for event creation remove the two associated with the filters (datepickstart/end)
+		<link rel="stylesheet" type="text/css" href="../resources/datetime/picker.css">
+		<script src="../resources/datetime/picker.common.js"></script>
+		<script src="../resources/datetime/picker.js"></script>
+		<script>
+			$(function(){
+				new Picker(document.querySelector('#datePickStart'), {
+				  format: "YYYY-MM-DD",
+				});
+				new Picker(document.querySelector('#datePickEnd'), {
+				  format: "YYYY-MM-DD",
+				});
+				new Picker(document.querySelector('#customEventInputSDate'), {
+				  format: 'YYYY-MM-DDTHH:mm:00',
+				});
+				new Picker(document.querySelector('#customEventInputEDate'), {
+				  format: 'YYYY-MM-DDTHH:mm:00',
+				});
+			});
+		</script> -->
+
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+	</head>
+	
+<body>
+
+	<header class="navbar fixed-top navbar-light bg-light">
+		<div class="container">
+			<a class="nav-item nav-link" href="index.html"><img class="svg-size" src="../img/Resources/Icons/home_white.svg" /></a>
+			<a class="nav-item nav-link" href="campusMap.html"><img class="svg-size-camp" src="../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+			<a class="nav-item nav-link" href="profile.html"><img src="../img/user-white.png" /></a>
+		</div>
+	</header>
+	
+	<p></p>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Events</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<!--<li class="nav-item">
+					<button id="savedEventsLoader" type="button" class="btn btn-block" data-toggle="modal" data-target="#savedEventsModal">Saved events</button>
+					<p></p>
+				</li> 12/14/18 Disabling for patch 2-->
+				<li class="nav-item">
+					<button type="button" class="btn btn-block" data-toggle="modal" data-target="#categoriesModal">Filters</button>
+					<p></p>
+				</li>
+				<!--	<li class="nav-item">
+					<button type="button" class="btn btn-block" data-toggle="modal" data-target="#myModal">Add New Event</button> 
+				</li> --(events creation)-->
+			</ul>
+		</div>
+	</nav>
+		
+
+	<section class="container mainContainers" id="eventsContainer" 
+		<section class="container">
+			<div class="row">
+			<div class="col-12">
+				<div id="accordion" role="tablist">
+					<div id="cardtemplate-here">
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title">New Event</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  <div class="modal-body">
+				<div id="addWarning"></div>
+					<form name="createEventForm" action="scripts/save-to-json-events.php" onsubmit="return validateForm()" method="POST">
+					  <fieldset>
+						<legend></legend>
+						<div class="modal-body">
+							<div id="addWarning"></div>
+							<p>Name: *<input id="customEventInputName" name="customEventInputName" class="form-control" type="text" value=""></p>
+							<p>Address: *<input id="customEventInputAddress" name="customEventInputAddress" class="form-control" type="text" value=""></p>
+							<p>Start Date: *<input id="customEventInputSDate" name="customEventInputSDate" class="form-control" type="text" value=""></p>
+							<p>End Date: *<input id="customEventInputEDate" name="customEventInputEDate" class="form-control" type="text" value=""></p>
+							<p>Description: *<textarea id="customEventInputDesc" name="customEventInputDesc" class="form-control" type="text" value=""></textarea>
+							<p><select id="customEventCate" name="customEventCate">
+							    <option value="Parties">Parties</option>
+							    <option value="Academic">Academic events</option>
+							    <option value="Culture">Culture</option>
+							    <option value="Activities">Activities</option>
+							</select>*</p>
+							<p>URL: <input id="customEventInputURL" name="customEventInputURL" class="form-control" type="text" value=""></p>
+						</div>
+						
+						<p>
+						  <input class="btn btn-default" type="submit" value="SAVE" />
+						</p>
+					  </fieldset>
+					</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+		
+		<!-- Modal, Dialog List -->
+		<div id="categoriesModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title">Filters</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  <div class="modal-body">
+	
+				<p><strong>Date range</strong></p>
+				<p>Start date:</p>
+				<p><input type="text" readonly="readonly" id="datePickStart"><button onclick="clearField(datePickStart)">x</button></p>
+				<p>End date:</p>
+				<p><input type="text" readonly="readonly" id="datePickEnd"><button onclick="clearField(datePickEnd)">x</button></p>
+				<p><strong>Categories:</strong></p>
+				<div class="form-check">
+					<input id="allCheck" type="checkbox" onclick="toggle(this);" checked />Check all<br />
+
+					<input id="partiesCheck" onclick="checkEmpty(this)" class="catSelector" value = "Juhlat" type="checkbox" checked />Parties<br />
+					<input id="academicCheck" onclick="checkEmpty(this)" class="catSelector" value = "Akateemiset tapahtumat" type="checkbox" checked />Academic events<br />
+					<input id="cultureCheck" onclick="checkEmpty(this)" class="catSelector" value = "Kulttuuri" type="checkbox" checked />Culture<br />
+					<input id="activitiesCheck" onclick="checkEmpty(this)" class="catSelector" value = "Harrastukset" type="checkbox" checked />Activities<br />
+				</div>
+				
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" id="setCategories" class="btn btn-default" data-dismiss="modal">Search</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+		<!-- Modal, Dialog List -->
+		<div id="savedEventsModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title">Saved events</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  <div class="modal-body">
+				<div id="myEvents"></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" id="setCategories" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+	</section>
+	
+	<footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../img/Resources/Icons/city_info_white_circle.svg" />
+					<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/events_black_circle.svg" />
+						<figcaption class="figure-caption text-center text-light">Events</figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+</body>
+
+<script defer src="scripts/events.js"></script>
+<html>

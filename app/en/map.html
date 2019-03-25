@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-122656902-1');
+        </script>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="leCss.css">
+													
+		<!-- Optional JavaScript -->
+		<script src="../idb.js"></script>
+		<script src="../progress.js"></script>
+		<script src="leScripts.js"></script>
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+	</head>
+	
+<body>
+
+<header class="navbar fixed-top navbar-light bg-light">
+	<div class="container">
+		<a class="nav-item nav-link" href="index.html"><img class="svg-size" src="../img/Resources/Icons/home_white.svg" /></a>
+		<a class="nav-item nav-link" href="campusMap.html"><img class="svg-size-camp" src="../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+		<a class="nav-item nav-link" href="profile.html"><img src="../img/user-white.png" /></a>
+	</div>
+</header>
+<p></p>
+<section class="container mapContainer" ID="mapSection">
+	<div class="row justify-content-center">
+		<div class="col-12">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#"></a>
+				<button id="menuBar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<!--<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="loadSavedArray()">
+								My places
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown0">
+								<div id="customPlaces text-cener">
+									<div id = "setNewPlace text-cener">
+										<div class = "text-cener">
+											<button type="button" class="btn btn-block btn-basic" data-toggle="modal" data-target="#myModalInfo">Add New Place</button>
+											<p></p>
+											<button id="savedPlaces" type="button" class="btn btn-block btn-basic" data-toggle="modal" data-target="#modalSavedPlaces" onclick="loadAddressList()">My places</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>-->
+						<li class="nav-item dropdown">
+							<a class="nav-link" role="button" href="#" id="savedPlaces" data-toggle="modal" data-target="#modalSavedPlaces" onclick="fullLoad()">My places</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Search nearby
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+								
+								<input id="nearbyInput" class="form-control" type="text" placeholder="e.g. Turku, Finland" onkeyup="filterFunction()">
+								<button id="nearbyInputButton" class="btn btn-block btn-basic" type="button">Search</button>
+								<div id="dropListDiv" class="dropdown-content">
+									<button class="dropdown-item" onclick="setListItem(this)">Groceries</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Student lunches</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Cafes</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Flea markets</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Pharmacies</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Gyms</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Libraries</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Bars</button>
+									<button class="dropdown-item" onclick="setListItem(this)">Night clubs</button>
+								</div>
+							</div>
+							
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Search address
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+								<input id="addressInput" class="form-control" type="text" placeholder="e.g. Turku, Finland">
+								<button id="addressInputButton" class="btn btn-block btn-basic" type="button">Search</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>	
+	</div>
+	<p></p>
+	<div class="row">
+			<div class="col-12" id="map">
+
+			</div>
+	</div>
+</section>
+
+<footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../img/Resources/Icons/city_info_white_circle.svg" />
+					<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/maps black circle.svg" />
+						<figcaption class="figure-caption text-center text-light">Map</figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+	
+	<!-- Modal, Dialog List For informational popup-->
+		<div id="myModalInfo" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title"></h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  <div class="modal-body">
+				<p class = "text-cener">Search places nearby or Search Address and then click on the search result and "Add Address"</p>				
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+	<!-- Modal, Dialog List  For adding new place-->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title">Set new place</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  <div class="modal-body">
+				<div id="addWarning"></div>
+				<p>Name* <input id="customAddressInputName" class="form-control" type="text" value=""></p>
+				<p>Address* <input id="customAddressInput" class="form-control" type="text" value=""></p>
+				<button id="customAddressInputButton" class="btn btn-block btn-basic" type="button">Add</button>
+			  </div>
+			  <div class="modal-footer">
+				<!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		
+	<!-- Modal, Dialog List -->
+		<div id="modalSavedPlaces" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title">My places</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  <div class="modal-body">
+				<div id="addWarningSaved"></div>	
+				<div id="myPlaces"></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	
+</body>
+
+	
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYb56J9B_ZMC_Ywn9UBsZcG6T0pyGb14&callback=myMap&libraries=places"></script>
+<html>

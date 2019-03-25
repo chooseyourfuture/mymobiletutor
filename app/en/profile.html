@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<link rel="manifest" href="../manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Thynote: , shrink-to-fit=no" after initial scale(?) -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656902-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-122656902-1');
+		</script>  
+	 
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="leCss.css">
+													 
+		<!-- Optional JavaScript -->
+		<script src="../progress.js"></script>
+		<script src="scripts/profile.js"></script>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="../resources/jquery/jquery-3.2.1.min.js"></script>
+		<script src="../resources/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Thynote: if understood correctly, bootstrap bundle includes popper -->
+			
+		<title>My Mobile Tutor</title>
+  </head>
+  <body>
+	<header class="navbar fixed-top navbar-light bg-light">
+		<div class="container">
+			<a class="nav-item nav-link" href="index.html"><img class="svg-size" src="../img/Resources/Icons/home_white.svg" /></a>
+			<a class="nav-item nav-link" href="campusMap.html"><img class="svg-size-camp" src="../img/Resources/Icons/campus_map_white_rectangle.svg" /></a>
+			<a class="nav-item nav-link" href="profile.html"><img src="../img/user-white.png" /></a>
+		</div>
+	</header>
+	<p></p>
+	<section class="container mainContainers" id="profilePage">				
+		<h1 class="text-center" id="userName"></h1>
+		<div class="row justify-content-center">
+			<div class="mb-3 col-8">
+				<div class="dropdown">
+				  <button  type="button" class="btn btn-block btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Language
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a type="button" class="text-center btn btn-block btn-basic" href="../fi/profile.html" onclick="setLang('fi')">Finnish</a>
+					<a type="button" class="text-center btn btn-block btn-basic" href="../en/profile.html" onclick="setLang('en')">English</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="m-2 col-8">
+				<p></p>
+				<button type="button" class="btn btn-block btn-basic" data-toggle="modal" data-target="#myModal">About</button>
+				<p></p>		
+				<a href="https://studentmobileapp.com/utu/feedback/"><button type="button" class="btn btn-block btn-basic">Feedback</button></a>
+				<p></p>		
+				<a href="https://studentmobileapp.com/utu/error-reporting/"><button type="button" class="btn btn-block btn-basic">Error Reporting</button></a>
+				<p></p>
+				<a href="https://chooseyourfuture.fi/my-mobile-tutor-terms-of-service/"><button type="button" class="btn btn-block btn-basic">Terms of Service</button></a>
+				<p></p>
+				<a href="https://chooseyourfuture.fi/my-mobile-tutor-privacy-policy/"><button type="button" class="btn btn-block btn-basic">Privacy Policy</button></a>
+			</div>
+		</div> 	
+		<div class="row justify-content-center">
+			<div class="mb-2 mt-2 col-8">
+				<a href="https://chooseyourfuture.fi/auth/saml/module.php/core/as_logout.php?AuthId=haka-mobile&ReturnTo=https://chooseyourfuture.fi/studentmobileapp.com/app/login/index.html"><button type="button" onclick="logoutUser()" class="btn btn-block btn-dark mb-2  py-3">Sign Out</button></a>
+			</div>
+		</div>
+	</section>
+	<footer class="navbar fixed-bottom navbar-light bg-light py-0">
+		<div class="container">
+			<a class="nav-item nav-link" href="city.html">
+				<figure class="figure svg-size">
+					<img class="svg-size" src="../img/Resources/Icons/city_info_white_circle.svg" />
+					<figcaption class="figure-caption text-center text-light"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="study.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/study_info_white_circle_v2.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="events.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/events_white_circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+			<a class="nav-item nav-link" href="map.html">
+				<figure class="figure svg-size">
+						<img class="svg-size" src="../img/Resources/Icons/maps white circle.svg" />
+						<figcaption class="figure-caption text-center"></figcaption>
+				</figure>
+			</a>
+		</div>
+	</footer>
+  </body>
+  
+  <!-- Modal, Dialog List -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header justify-content-center">
+				<h4 class="modal-title text-center">About</h4>
+			  </div>
+			  <div class="modal-body">
+				<div id="addWarning"></div>
+				<p><strong>Welcome to use My mobile tutor!</strong></p>
+				<p>This service is designed to help you as a student of University of Turku to make you feel at home. The most important features are<br />
+				1. Get to know your home city and University<br />
+				2. Create and attend various events and<br />
+				3. Find and add your favorite places<br />
+				All the content has been created by fellow students and alumni and is based on real recommendations rather than paid advertising.</p>
+				<p>Enjoy your stay in the city and University of Turku!</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+</html>

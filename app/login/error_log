@@ -1,0 +1,20 @@
+[19-Sep-2018 18:53:39 EET] PHP Fatal error:  Uncaught exception 'Exception' with message 'displayName attribute missing.' in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 13
+[19-Sep-2018 18:55:50 EET] PHP Fatal error:  Uncaught exception 'Exception' with message 'displayName attribute missing.' in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 13
+[02-Jan-2019 20:16:03 EET] PHP Fatal error:  Uncaught exception 'Exception' with message 'displayName attribute missing.' in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 13
+[02-Jan-2019 20:16:55 EET] PHP Fatal error:  Uncaught exception 'Exception' with message 'displayName attribute missing.' in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 13
+[02-Jan-2019 20:39:27 EET] PHP Fatal error:  Uncaught exception 'Exception' with message 'displayName attribute missing.' in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 13
