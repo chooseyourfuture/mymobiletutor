@@ -9,12 +9,12 @@
   
   var currLoc = window.location.pathname;
   console.log(currLoc);
-  if (getCookie('user')=='' && currLoc != '/studentmobileapp.com/app/login/index.html'){
-	if(currLoc != '/studentmobileapp.com/app/login/test.html'){
-		// similar behavior as an HTTP redirect
-		window.location.replace("/studentmobileapp.com/app/login/index.html");
-	}
-  }
+/*   if (getCookie('user')=='' && currLoc != '/studentmobileapp.com/app/login/index.html'){
+    if(currLoc != '/studentmobileapp.com/app/login/test.html'){
+      // similar behavior as an HTTP redirect
+      window.location.replace("/studentmobileapp.com/app/login/index.html");
+    }
+  } */
   
   
 })();

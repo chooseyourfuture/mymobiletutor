@@ -54,8 +54,12 @@ a:hover{
 	background-color: rgba(242, 242, 242, 0.4);
 }
 
-#mapSection div{
+#mapSection>div{
 	background-color: rgba(242, 242, 242, 0);
+}
+
+#mapSection .gm-style-iw{
+	background-color: #fff;
 }
 
 /*home*/
