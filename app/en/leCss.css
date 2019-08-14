@@ -58,8 +58,8 @@ a:hover{
 	background-color: rgba(242, 242, 242, 0);
 }
 
-#mapSection .gm-style-iw{
-	background-color: #fff;
+.gm-style-iw{
+	background-color: #fff !important;
 }
 
 /*home*/

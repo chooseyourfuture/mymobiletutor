@@ -59,6 +59,10 @@ a:hover{
 	background-color: rgba(242, 242, 242, 0);
 }
 
+.gm-style-iw{
+	background-color: #fff !important;
+}
+
 /*home*/
 .home_display{
 background-size:cover;
