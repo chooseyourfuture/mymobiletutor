@@ -54,11 +54,15 @@ a:hover{
 	background-color: rgba(242, 242, 242, 0.4);
 }
 
-#mapSection>div{
+#mapSection div{
 	background-color: rgba(242, 242, 242, 0);
 }
 
 .gm-style-iw{
+	background-color: #fff !important;
+}
+
+.dropdown-menu{
 	background-color: #fff !important;
 }
 
