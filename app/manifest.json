@@ -1,6 +1,6 @@
 {
-  "name": "My mobile tutor",
-  "short_name": "My mobile tutor",
+  "name": "My Mobile Tutor",
+  "short_name": "My Mobile Tutor",
   "scope": "/",
   "display": "fullscreen",
   "start_url": "en/index.html",
