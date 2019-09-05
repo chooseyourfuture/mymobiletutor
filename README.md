@@ -1,11 +1,25 @@
 # My Mobile Tutor
 
-## Running on your local server
+## Running on your local computer
 
-`npm install live-server`
-`live-server`
+1. Install Node.js and live-server
 
-## Deployment to live
+    `npm i -g live-server`
 
-`git remote add live ssh://choos562@chooseyourfuture.fi/home/choos562/repositories/mymobiletutor`
-`git push -u live master`
+2. Navigate to the project directory and run live-server
+
+    `live-server`
+
+## Deployment to live server
+
+1. Install git command line tools: https://git-scm.com/downloads
+
+2. Navigate to the project directory via command line
+
+3. Add live server as remote origin named live for git. You only need to do this once.
+
+    `git remote add live ssh://choos562@chooseyourfuture.fi/home/choos562/repositories/mymobiletutor`
+
+4. Push to the newly created "live" origin.
+
+    `git push -u live master`
