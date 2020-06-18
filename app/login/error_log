@@ -18,3 +18,33 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 13
+[25-Nov-2019 16:55:55 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[26-Nov-2019 15:59:58 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[26-Nov-2019 21:28:32 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[27-Nov-2019 07:19:11 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[27-Nov-2019 09:30:36 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[27-Nov-2019 11:09:29 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[27-Nov-2019 15:22:18 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[28-Nov-2019 08:21:02 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[29-Nov-2019 08:04:06 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[03-Dec-2019 07:26:18 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[03-Dec-2019 07:36:47 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[04-Dec-2019 09:02:17 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[04-Dec-2019 10:07:02 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[05-Dec-2019 12:35:25 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[05-Dec-2019 12:36:18 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[05-Dec-2019 12:37:29 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[05-Dec-2019 12:39:36 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[09-Dec-2019 20:16:35 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[09-Dec-2019 20:21:04 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[09-Dec-2019 20:21:09 UTC] PHP Warning:  session_cache_limiter(): Cannot change cache limiter when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 117
+[09-Dec-2019 20:21:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function requireAuth() on null in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 4
+[16-Mar-2020 13:42:53 UTC] PHP Warning:  require_once(../../../auth/lib/_autoload.php): failed to open stream: No such file or directory in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 2
+[16-Mar-2020 13:42:53 UTC] PHP Fatal error:  require_once(): Failed opening required '../../../auth/lib/_autoload.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/choos562/public_html/studentmobileapp.com/app/login/attributeset-test.php on line 2
+[16-Mar-2020 13:53:49 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 351
+[16-Mar-2020 13:55:10 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when session is active in /home/choos562/public_html/auth/lib/SimpleSAML/SessionHandlerPHP.php on line 351
+[01-Jun-2020 16:56:22 EET] PHP Warning:  require_once(../../../auth/lib/_autoload.php): failed to open stream: No such file or directory in /home/choos562/public_html/app/login/attributeset-test.php on line 2
+[01-Jun-2020 16:56:22 EET] PHP Fatal error:  require_once(): Failed opening required '../../../auth/lib/_autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/choos562/public_html/app/login/attributeset-test.php on line 2

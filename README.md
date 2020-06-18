@@ -18,7 +18,7 @@
 
 3. Add live server as remote origin named live for git. You only need to do this once.
 
-    `git remote add live ssh://choos562@chooseyourfuture.fi/home/choos562/repositories/mymobiletutor`
+    `git remote add live ssh://choos562@studentmobileapp.com/home/choos562/repositories/mymobiletutor`
 
 4. Push to the newly created "live" origin.
 

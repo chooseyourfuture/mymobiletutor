@@ -67,6 +67,14 @@ a:hover{
 }
 
 /*home*/
+.carousel figure img{
+	filter: brightness(80%);
+}
+
+.carousel figure{
+	text-shadow: 3px 3px 6px rgba(0,0,0,.4)
+}
+
 .home_display{
 background-size:cover;
 overflow:none;

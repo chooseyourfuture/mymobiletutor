@@ -1,11 +1,67 @@
 
+RewriteEngine on
+# Deny folder listing
+Options -Indexes
+
+# X-Frame-Options, only allow browser access from sameorigin
+<IfModule mod_headers.c>
+	Header set X-Frame-Options "SAMEORIGIN"
+   Header unset X-Powered-By
+   Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# Disable server signature
+ServerSignature Off
+
 RewriteOptions inherit
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^studentmobileapp\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.studentmobileapp\.com$
-RewriteRule ^/?$ "https\:\/\/studentmobileapp\.com\/utu\/" [R=301,L]
-RewriteCond %{HTTP_HOST} ^studentmobileapp\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.studentmobileapp\.com$
-RewriteRule ^app\/?$ "https\:\/\/chooseyourfuture\.fi\/studentmobileapp\.com\/app\/login\/" [R=301,L]
+# RewriteCond %{REQUEST_URI} "/auth/"
+# RewriteCond %{REQUEST_URI} "/mmt-admin/" [OR]
+# RewriteCond %{REQUEST_URI} "/studentmobileapp.com/" [OR]
+# RewriteRule (.*) $1 [L]
 
+RewriteRule ^my\-mobile\-tutor\-kayttoehdot\/$ "https\:\/\/studentmobileapp\.com\/utu\/my\-mobile\-tutor\-kayttoehdot\.pdf" [R=302,L]
+RewriteRule ^my\-mobile\-tutor\-tietosuojaseloste$ "https\:\/\/studentmobileapp\.com\/utu\/my\-mobile\-tutor\-tietosuojaseloste\.pdf" [R=302,L]
+RewriteRule ^my\-mobile\-tutor\-terms\-of\-service\/$ "https\:\/\/studentmobileapp\.com\/utu\/my\-mobile\-tutor\-terms\-of\-service\.pdf" [R=302,L]
+RewriteRule ^my\-mobile\-tutor\-privacy\-policy$ "https\:\/\/studentmobileapp\.com\/utu\/my\-mobile\-tutor\-privacy\-policy\.pdf" [R=302,L]
+
+# RewriteCond %{HTTP_HOST} ^studentmobileapp\.com$ [OR]
+# RewriteCond %{HTTP_HOST} ^www\.studentmobileapp\.com$
+# RewriteRule ^/?$ "https\:\/\/studentmobileapp\.com\/studentmobileapp\.com\/utu" [R=302,L]
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_flag display_errors On
+   php_value max_execution_time 300
+   php_value max_input_time 60
+   php_value max_input_vars 10000
+   php_value memory_limit -1
+   php_value post_max_size 128M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/tmp"
+   php_value upload_max_filesize 128M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors On
+   php_value max_execution_time 300
+   php_value max_input_time 60
+   php_value max_input_vars 10000
+   php_value memory_limit -1
+   php_value post_max_size 128M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/tmp"
+   php_value upload_max_filesize 128M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

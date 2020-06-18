@@ -1,9 +1,9 @@
 <?php
-	require_once('../../../auth/lib/_autoload.php');
+	require_once('../../auth/lib/_autoload.php');
 	$as = new SimpleSAML_Auth_Simple ( 'haka-mobile-test' );
 	$as->requireAuth(array(
 		'KeepPost' => FALSE,
-		'ErrorURL' => 'https://chooseyourfuture.fi/studentmobileapp.com/app/login/index.html'
+		'ErrorURL' => 'https://studentmobileapp.com/app/login/index.html'
 	));
 	$attributes = $as->getAttributes();	
 	$attrs = $as->getAttributes();
@@ -66,7 +66,7 @@
 	}
 	//End user records	
 	
-	header('Location: https://chooseyourfuture.fi/studentmobileapp.com/app/en/index.html');
+	header('Location: https://studentmobileapp.com/app/en/index.html');
 	
 	exit();
 

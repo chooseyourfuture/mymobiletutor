@@ -3,7 +3,7 @@
   // TODO add service worker code here
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('https://chooseyourfuture.fi/studentmobileapp.com/app/sw.js')
+             .register('https://studentmobileapp.com/app/sw.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
   
