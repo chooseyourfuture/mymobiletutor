@@ -14,12 +14,18 @@
 
 1. Install git command line tools: https://git-scm.com/downloads
 
-2. Navigate to the project directory via command line
+2. Clone the repository to a local folder with git clone.
 
-3. Add live server as remote origin named live for git. You only need to do this once.
+    `git clone https://github.com/chooseyourfuture/mymobiletutor.git`
+
+3. Navigate to the project directory via command line
+
+4. Add live server as remote origin named live for git. You only need to do this once.
 
     `git remote add live ssh://choos562@studentmobileapp.com/home/choos562/repositories/mymobiletutor`
 
-4. Push to the newly created "live" origin.
+5. Push to the newly created "live" origin. You will need the webhotel password for this step. Remember to also push the changes to Github to keep the repositories in sync.
 
     `git push -u live master`
+
+    `git push -u origin master`
