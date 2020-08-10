@@ -23,7 +23,7 @@ steps:
     password: 'kJcik3Uq8y5JMZf'
     rootDirectory: '$(build.sourcesDirectory)'
     filePatterns: '**'
-    remoteDirectory: '/public_html/git-test'
+    remoteDirectory: '/public_html'
     clean: false
     cleanContents: false
     preservePaths: true
