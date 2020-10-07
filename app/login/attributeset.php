@@ -30,7 +30,7 @@
 	$leEvent -> email = $attrs['eduPersonPrincipalName'][0];
 	$leEvent -> loginDate = date(DATE_ATOM);
 	
-	$log_file_name = 'userLogs.JSON'; // Change to the log file name
+	$log_file_name = '/home/vhqtzlmi/public_html/userLogs.JSON'; // Change to the log file name
 	$handle = @fopen($log_file_name, 'r+');
 	// create the file if needed
 	if ($handle === null)
