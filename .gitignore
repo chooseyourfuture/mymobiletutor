@@ -1,1 +1,2 @@
 .htaccess
+/app/login/userLogs*.JSON
