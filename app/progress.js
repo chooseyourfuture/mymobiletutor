@@ -1,5 +1,6 @@
 (function() {
-	 'use strict';
+   'use strict';
+
   // TODO add service worker code here
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
@@ -19,6 +20,36 @@
   
 })();
 
+window.addEventListener('DOMContentLoaded', function() {
+  // Global app settings, especially maintenance mode and HAKA related
+  // config: { enableHaka: boolean, enableMaintenance: boolean, maintenanceContent: { message: string, title: string } }
+  
+  $.getJSON('https://studentmobileapp.com/settings.json', (config) => {
+    console.log(config);
+    let isLogin = window.location.pathname.includes('/login');
+
+    console.log(config);
+    if (!config.enableHaka && isLogin) {
+      console.log('is login');
+      $('.direct_access').show();
+      $('.haka_login').hide();
+    }
+    if (config.enableMaintenance) {
+        // Redirect user to login if global maintenance mode is enabled and user is not in login view
+        console.log(window.location.pathname);
+        if (isLogin) {
+            $('.maintenance_message').show();
+            $('.maintenance_message h3').text(config.maintenanceContent.title);
+            $('.maintenance_message p').html(config.maintenanceContent.message.replace(/(?:\r\n|\r|\n)/g, '<br>'));
+            $('.login_form').hide();
+            $('.terms').hide();
+        }
+        else {
+            document.location = '/app/login';
+        }
+    }
+  });
+});
 
 //Cookie functions
 function setCookie(cname, cvalue, exdays) {

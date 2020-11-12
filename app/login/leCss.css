@@ -11,7 +11,7 @@ div {
     display: block;
 }
 
-@media screen and (min-width: 768px)
+
 .login_form {
     width: 300px;
     height: 300px;
@@ -23,6 +23,7 @@ div {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50vh;
 }
 
 .login_title {
@@ -66,6 +67,7 @@ div {
     margin-bottom: 25px;
     width: 140px;
     text-decoration: none;
+    display: block;
 }
 
 .haka {
@@ -83,5 +85,9 @@ div {
     align-items: center;
 }
 
-}
 
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
