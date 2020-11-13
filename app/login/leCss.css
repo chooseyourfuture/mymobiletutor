@@ -85,9 +85,15 @@ div {
     align-items: center;
 }
 
-
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    footer{
+        position: relative;
+        width: 100%;
+    }
 }
