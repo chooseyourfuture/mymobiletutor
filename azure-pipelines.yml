@@ -20,7 +20,7 @@ steps:
     credentialsOption: 'inputs'
     serverUrl: 'ftps://studentmobileapp.com'
     username: 'admin@studentmobileapp.com'
-    password: 'kJcik3Uq8y5JMZf'
+    password: 'tNM5IU!0X@'
     rootDirectory: '$(build.sourcesDirectory)'
     filePatterns: '**'
     remoteDirectory: '/public_html'
